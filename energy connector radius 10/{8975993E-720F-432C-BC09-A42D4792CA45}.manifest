@@ -1,0 +1,21 @@
+WorkspaceManifest
+{
+	description "dXNlIGF1dG9leGVjLmx1YQ=="
+	tags
+	{
+		String "Creatures"
+	}
+
+	modified_game_files
+	title "ZW5lcmd5IGNvbm5lY3RvciByYWRpdXMgeDIgYnkgTGlsbHk="
+	homepage
+	modio_published_file "4142262"
+	visibility "0"
+	game_version "EXE: 978 DATA: 573"
+	version "1.0.0"
+	localizations
+	author
+	steam_published_file "3282965090"
+	dependencies
+}
+

@@ -1,0 +1,401 @@
+run : units/ground/artigian
+database set : units/ground/artigian
+* NavMeshMovementComponent
+  is_target_nearby : 0
+  target_entity_id : 4294967295
+  should_calculate_path : 1
+  update_path_slot : 0
+  velocity : nil
+  angle_turn_speed : 240.000
+  state : 1
+  is_only_separation : 0
+  unit_soft_radius : 1.200
+  ignore_cost_mask : 26
+  target_origin : nil
+  current_path_point_idx : 0
+  cached_movement : nil
+  was_blocked : 0
+  can_move : 1
+  current_node_index : -1
+  acceleration : 0.000
+  type : 2
+  path_points : nil
+  max_speed : 0.000
+  path_update_timer : nil
+  seek_path_origin : nil
+  flow_fields_indexes : nil
+  always_in_motion : 1
+  current_speed : 0.000
+  is_target_visible : 0
+  flow_fields_force : nil
+  dominance_group : 0
+  force : nil
+* RegenerationComponent
+  cooldown : nil
+  regeneration : 150.000
+  regeneration_ent : nil
+  regeneration_cooldown : 5.000
+  regeneration_timer : 0.000
+  regeneration_end_effect : effects/enemies_artigian/healing_finished
+  regeneration_effect : effects/enemies_artigian/healing
+* UniformComponent
+  renderable_custom_parameters : nil
+* LootComponent
+  explosion_min_power : 5000.000
+  spawn_offset : nil
+  loot_container_override : 4
+  bp : units/ground/artigian
+  explosion_max_power : 10000.000
+  is_gatherable : 1
+* DiscoverableComponent
+  scannable_factor : 1.000
+* BlueprintComponent
+  blueprint : nil
+* DestructionLevelComponent
+  current_destruction_level_idx : -1
+  previous_destruction_level_idx : -1
+  effect_timer : nil
+  flags : 23
+* LuaComponent
+  script : nil
+  database : nil
+  snapshot : nil
+  is_initialized : 0
+  object : nil
+* DatabaseComponent
+  database : nil
+* HealthComponent
+  max_health : 2000.000
+  health : 2000.000
+  status : 8
+  immortal_counter : 0
+* BurstWeaponComponent
+  muzzles_current_cycle : 0
+  reocils_tasks : nil
+  fire_requests : nil
+  last_can_fire : 1
+  ammo_type : 0
+  affector_time : 0.000
+  last_snaped_ent : nil
+  use_custom_target : 0
+  fire_loop_entities : nil
+  WeaponMuzzles : nil
+  current_state : 0
+  plain_auto_aim : 1
+  burst_column_angle : 0.000
+  check_target_visibility : 0
+  custom_target : nil
+  use_accuracy : 1
+  burst_column_spacing : 0.000
+  WeaponAffector : nil
+  muzzle_flash_effect : effects/enemies_artigian/artillery_launch
+  burst_rate : 0.000
+  muzzles_per_fire : 1
+  fire_effect : 
+  pending_state : 0
+  accuracy : 1.000
+  reload_timer : nil
+  ammo_blueprint : units/ground/artigian/projectile
+* HealthDesc
+  override_only_first_submesh : 0
+  is_manual : 1
+  is_dead : 0
+  DestructionLevels : nil
+  update_health_uniform : 1
+  max_health : 2000.000
+  health : 2000.000
+  is_immortal : 0
+* WeaponItemDesc
+  rarity : 0
+  damage_type : acid
+  stat_def_vec : nil
+  ammo_storage : 
+* MeshDesc
+  material : units/ground/artigian
+  user_flags : 0
+  mesh : meshes/units/ground/artigian.mesh
+  render_group : 255
+  renderable_custom_parameters : nil
+  SubMeshes : nil
+  flags : 6
+run : units/ground/baxmoth
+database set : units/ground/baxmoth
+* TurretComponent
+  mode : 3
+  idle_progress : 0.000
+  target_change_timer : 0.000
+  custom_target : nil
+  cooldown_timer : 0.000
+  target : nil
+  flamer_data : nil
+  status : 0
+  see_invisible : 0
+  cooldown_working : 0
+* UniformComponent
+  renderable_custom_parameters : nil
+* LootComponent
+  explosion_min_power : 5000.000
+  spawn_offset : nil
+  loot_container_override : 4
+  bp : units/ground/baxmoth
+  explosion_max_power : 10000.000
+  is_gatherable : 1
+* DiscoverableComponent
+  scannable_factor : 1.000
+* AdaptiveMusicComponent
+  factor : 15.000
+* BlueprintComponent
+  blueprint : nil
+* TurretDesc
+  aiming_cooldown : 1.000
+  ammo_type : 0
+  aiming_offset : nil
+  find_type : 1
+  artillery_min_angle : 45.000
+  name : attack
+  gravity_factor : 15.000
+  use_IK : 0
+  check_target_visibility : 1
+  aiming_target_time : 2.000
+  aim_volume : nil
+  yaw : att_muzzle
+  target_ignore : 545783808
+  artillery_max_angle : 45.000
+  aiming_idle_angle : 20.000
+  target : nil
+  speed : 200.000
+  fog_of_war_filtering : 0
+  pitch : att_muzzle
+* DestructionLevelComponent
+  current_destruction_level_idx : -1
+  previous_destruction_level_idx : -1
+  effect_timer : nil
+  flags : 151
+* LuaComponent
+  script : nil
+  database : nil
+  snapshot : nil
+  is_initialized : 0
+  object : nil
+* SwarmUnitControllerComponent
+  spawn_time : 0.100
+  spawn_counter : 0
+  spawn_disabled : 1
+  swarm : nil
+  spawn_effect : effects/enemies_baxmoth/drone_spawn
+  state : 1077938288
+  blueprint : units/air/baxmoth_drone
+  spawn_timer : nil
+  attachment_to_spawn_from : spawn
+  max_spawn : 15
+* DatabaseComponent
+  database : nil
+* HealthComponent
+  max_health : 1000.000
+  health : 1000.000
+  status : 8
+  immortal_counter : 0
+* HealthDesc
+  override_only_first_submesh : 0
+  is_manual : 1
+  is_dead : 0
+  DestructionLevels : nil
+  update_health_uniform : 1
+  max_health : 1000.000
+  health : 1000.000
+  is_immortal : 0
+* MeshDesc
+  material : units/ground/baxmoth
+  user_flags : 0
+  mesh : meshes/units/ground/baxmoth.mesh
+  render_group : 255
+  renderable_custom_parameters : nil
+  SubMeshes : nil
+  flags : 6
+* TurretTargetComponent
+  target_pos : nil
+run : units/ground/canoptrix_base
+database set : units/ground/canoptrix_base
+* NavMeshMovementComponent
+  is_target_nearby : 0
+  target_entity_id : 4294967295
+  should_calculate_path : 1
+  update_path_slot : 0
+  velocity : nil
+  angle_turn_speed : 200.000
+  state : 1
+  is_only_separation : 0
+  unit_soft_radius : 0.660
+  ignore_cost_mask : 26
+  target_origin : nil
+  current_path_point_idx : 0
+  cached_movement : nil
+  was_blocked : 0
+  can_move : 1
+  current_node_index : -1
+  acceleration : 0.000
+  type : 2
+  path_points : nil
+  max_speed : 10.000
+  path_update_timer : nil
+  seek_path_origin : nil
+  flow_fields_indexes : nil
+  always_in_motion : 1
+  current_speed : 10.000
+  is_target_visible : 0
+  flow_fields_force : nil
+  dominance_group : 1
+  force : nil
+* AnimationGraphDesc
+  animation_graph_name : canoptrix
+  instance_desc : nil
+  group_name : 
+* MinimapItemComponent
+  rotation_mode : 0
+  clamp_mode : 0
+  unknown_until_visible : 0
+  color : nil
+  big_minimap_scale : 1.000
+  visibility : 2
+  type : 2
+  def : nil
+  additional_z_order : 0.000
+  icon_material : 
+  size : nil
+* TeamDesc
+  team : canoptrix
+* HighlightComponent
+  mode : 0
+  current_time : 0.000
+  last_damage : 0.000
+  flash_time : 0.000
+  factor : 0.000
+  hits : nil
+  last_hit_time : 0.000
+* ResistanceComponent
+  default_factor : 1.000
+  min_damage_threshold : 0.000
+  resistances : nil
+  reflect_damage_max_percent : 1.000
+* LootComponent
+  explosion_min_power : 4000.000
+  spawn_offset : nil
+  loot_container_override : 4
+  bp : units/ground/canoptrix_base
+  explosion_max_power : 8000.000
+  is_gatherable : 1
+* DiscoverableComponent
+  scannable_factor : 1.000
+* AdaptiveMusicComponent
+  factor : 1.000
+* FxComponent
+  threshold_vec : nil
+  prev_pos : nil
+  damage_generic_timeout : nil
+  avg_speed : 0.000
+  tier : 0
+  idle_audible : 0
+* BlueprintComponent
+  blueprint : nil
+* StateMachineComponent
+  param_database : nil
+  action_stack : nil
+  state_machines : nil
+  event_vec : nil
+  actions_to_remove : nil
+* EmissiveDayAndNightAffector
+  last_value : -1.000
+  max : 1.000
+  min : 0.800
+* TerrainAffectedComponent
+  footstep_effect : 0
+  last_terrain_cell : 4294967295
+  last_terrain_hash : 0
+  name : unit
+  map_interference : 0
+  triggers : nil
+  terrain : nil
+  last_terrain_cell_entity : nil
+  origin_mode : 1
+* PhysicsDesc
+  objects : nil
+* DestructionLevelComponent
+  current_destruction_level_idx : -1
+  previous_destruction_level_idx : -1
+  effect_timer : nil
+  flags : 119
+* FlammableComponent
+  burned_recovery_time : 0.000
+  fire_spread_radius : 0.100
+  burned_ember_time : 0.200
+  fire_spread_interval : 4.000
+  burned_min_glow : 0.000
+  disable_light_fade_out : 0
+  fire_probability : 0.100
+  burning_time : 6.000
+* LuaComponent
+  script : nil
+  database : nil
+  snapshot : nil
+  is_initialized : 0
+  object : nil
+* DestroyDesc
+  CachedDestroyPattern : nil
+  DestroyPatterns : nil
+* SkeletonDesc
+  name : meshes/units/ground/canoptrix
+  bone_transforms : nil
+* StunDataComponent
+  force_stagger_chance : 1.000
+  last_stagger_long_timestamp : 0.000
+  last_stun_timestamp : 0.000
+  current_time : 0.000
+  stagger_time : 0.200
+  last_stagger_timestamp : 0.000
+  stagger_cooldown : 0.000
+  stagger_long_health_threshold : 0.300
+  stun_cooldown : 0.000
+  current_factor : 0.000
+  stagger_health_threshold : 0.050
+  stagger_long_cooldown : 0.000
+  current_type : 4
+  stagger_long_time : 0.700
+* GroundNavigationComponent
+* EffectDesc
+  Effects : nil
+* MovementDataComponent
+  deacceleration : nil
+  acceleration : nil
+  max_speed : nil
+* DatabaseComponent
+  database : nil
+* SelectableComponent
+  description : monster_description/canoptrix
+  can_activate : 0
+  content : monster_name/canoptrix
+  large_icon_material : gui/menu/species/fauna/canoptrix
+  icon_material : gui/hud/fauna/canoptrix_icon
+* HealthComponent
+  max_health : 5.000
+  health : 5.000
+  status : 8
+  immortal_counter : 0
+* TeamComponent
+  team : nil
+* TypeComponent
+  type : 96
+* StateMachineDesc
+  params : nil
+  template_name : canoptrix
+* VegetationBendingComponent
+  bending_power : 2000.000
+  bending_radius : 2.000
+* HealthDesc
+  override_only_first_submesh : 0
+  is_manual : 1
+  is_dead : 0
+  DestructionLevels : nil
+  update_health_uniform : 1
+  max_health : 5.000
+  health : 5.000
+  is_immortal : 0

@@ -1,0 +1,35 @@
+WorkspaceManifest
+{
+	description "QnVpbGRpbmcgSGVhbHRoIHggMTAwCgpDaGFuZ2VkIHNvIHRoYXQgaXQgZG9lcyBub3QgYWZmZWN0IGx1YSBzY3JpcHQ="
+	tags
+	{
+		String "Buildings"
+	}
+
+	modified_game_files
+	title "QnVpbGRpbmcgSGVhbHRoIHggMTAwIGJ5IExpbGx5IA=="
+	homepage
+	modio_published_file "4142214"
+	visibility "0"
+	game_version "EXE: 978 DATA: 573"
+	version "1.0.2"
+	localizations
+	{
+		Pair_String_Localization
+		{
+			value
+			{
+				description "67mM65SpIOyxhOugpSAxMDDrsLAKCg=="
+				title "67mM65SpIOyxhOugpSAxMDDrsLAgYnkgTGlsbHkg"
+			}
+
+			key "KOREAN"
+		}
+
+	}
+
+	author
+	steam_published_file "3282959656"
+	dependencies
+}
+

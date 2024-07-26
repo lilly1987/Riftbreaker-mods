@@ -1,0 +1,117 @@
+items/weapons/power_fist_basic_item
+{
+	WeaponItemDesc
+	{
+		ammo_storage
+		damage_type "energy"
+		stat_def_vec
+		{
+			WeaponStatDef
+			{
+				max_value "20000.000"
+				min_value "20000.000"
+				stat_features "BASE_MINMAX|STATISTIC"
+				stat_type "DAMAGE_VALUE"
+			}
+
+			WeaponStatDef
+			{
+				max_value "5.000"
+				min_value "5.000"
+				stat_features "BASE_MINMAX|HIDDEN"
+				stat_type "DAMAGE_SPREAD"
+			}
+
+			WeaponStatDef
+			{
+				default_value "1.000"
+				max_value "5.000"
+				min_value "5.000"
+				stat_features "BASE_DEFAULT"
+				stat_type "DAMAGE_CRITICAL_CHANCE"
+			}
+
+			WeaponStatDef
+			{
+				stat_type "DAMAGE_OVER_TIME"
+			}
+
+			WeaponStatDef
+			{
+				default_value "0.100"
+				max_value "0.100"
+				min_value "0.100"
+				stat_features "BASE_DEFAULT|STATISTIC"
+				stat_type "AMMO_STUN"
+			}
+
+			WeaponStatDef
+			{
+				max_value "3.000"
+				min_value "3.000"
+				stat_features "BASE_MINMAX|HIDDEN"
+				stat_type "AMMO_STUN_LENGTH"
+			}
+
+			WeaponStatDef
+			{
+				max_value "300.000"
+				min_value "300.000"
+				stat_features "BASE_MINMAX|HIDDEN"
+				stat_type "DAMAGE_CRITICAL_FACTOR"
+			}
+
+			WeaponStatDef
+			{
+				max_value "5.000"
+				min_value "5.000"
+				stat_features "BASE_MINMAX|HIDDEN"
+				stat_type "DAMAGE_OVER_TIME_LENGTH"
+			}
+
+			WeaponStatDef
+			{
+				max_value "30.000"
+				min_value "30.000"
+				stat_features "BASE_MINMAX"
+				stat_type "BEAM_RANGE"
+			}
+
+			WeaponStatDef
+			{
+				max_value "20.000"
+				min_value "20.000"
+				stat_features "BASE_MINMAX"
+				stat_type "DAMAGE_SPLASH"
+			}
+
+			WeaponStatDef
+			{
+				max_value "0.349"
+				min_value "0.349"
+				stat_features "BASE_MINMAX"
+				stat_type "WEAPON_ANIMATION_SPEED"
+			}
+
+			WeaponStatDef
+			{
+				max_value "1.000"
+				min_value "1.000"
+				stat_features "BASE_MINMAX"
+				stat_type "WEAPON_SCALE"
+			}
+
+			WeaponStatDef
+			{
+				default_value "0.100"
+				max_value "0.100"
+				min_value "0.100"
+				stat_features "BASE_DEFAULT|STATISTIC"
+				stat_type "DAMAGE_LIFESTEAL"
+			}
+
+		}
+
+	}
+
+}

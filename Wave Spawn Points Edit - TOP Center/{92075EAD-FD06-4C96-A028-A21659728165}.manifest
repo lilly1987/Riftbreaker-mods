@@ -1,0 +1,21 @@
+WorkspaceManifest
+{
+	description "Q2hhbmdlZCBzbyB0aGF0IGl0IGRvZXMgbm90IGFmZmVjdCB0aGUgc2NyaXB0"
+	tags
+	{
+		String "Missions"
+	}
+
+	modified_game_files
+	title "V2F2ZSBTcGF3biBQb2ludHMgRWRpdCAtIFRPUCBDZW50ZXI="
+	homepage
+	modio_published_file "4142365"
+	visibility "0"
+	game_version "EXE: 975 DATA: 570"
+	version "1.1.0"
+	localizations
+	author
+	steam_published_file "3282998466"
+	dependencies
+}
+

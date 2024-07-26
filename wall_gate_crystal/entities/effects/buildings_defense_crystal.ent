@@ -1,0 +1,276 @@
+
+EntityBlueprint
+{
+	name effects/buildings_defense/explosion_crystal_wall_lvl_1
+
+	base_blueprints
+	{
+		effects/default
+	}
+
+	BombAmmoComponent
+	{		
+		DamagePattern
+		{
+			area_damage_radius	"50"
+			area_damage_speed 	"20"
+
+			Damages
+			{
+				Damage
+				{
+					value 			"10000"
+					type			"physical"
+				}
+			}
+		}
+	}	
+
+	ParticleDesc
+	{
+		name    "rift/crystal_wall_explosion"
+	}
+
+	CameraShakeDesc
+	{
+		duration 		"0.1"
+		power   		"0.5"
+		falloff_radius 	"20"
+		radius   		"30"
+		frequency 		"20"
+		group			"explosion_small"
+	}
+
+	SoundDesc
+	{
+		name "buildings_defense/crystal_wall_explosion"
+	}
+
+	DecalDesc
+	{	
+		blueprint "effects/decals/explosion_hole_random"
+		scale
+		{
+			x		2
+			y		2
+			z		2
+		}
+	}	
+}
+
+EntityBlueprint
+{
+	name effects/buildings_defense/explosion_crystal_wall_lvl_2
+
+	base_blueprints
+	{
+		effects/default
+	}
+
+	BombAmmoComponent
+	{		
+		DamagePattern
+		{
+			area_damage_radius	"50"
+			area_damage_speed 	"20"
+
+			Damages
+			{
+				Damage
+				{
+					value 			"20000"
+					type			"physical"
+				}
+			}
+		}
+	}	
+
+	ParticleDesc
+	{
+		name    "rift/crystal_wall_explosion"
+	}
+
+	CameraShakeDesc
+	{
+		duration 		"0.1"
+		power   		"0.5"
+		falloff_radius 	"20"
+		radius   		"30"
+		frequency 		"20"
+		group			"explosion_small"
+	}
+
+	SoundDesc
+	{
+		name "buildings_defense/crystal_wall_explosion"
+	}
+
+	DecalDesc
+	{	
+		blueprint "effects/decals/explosion_hole_random"
+		scale
+		{
+			x		2
+			y		2
+			z		2
+		}
+	}	
+}
+
+EntityBlueprint
+{
+	name effects/buildings_defense/explosion_crystal_wall_lvl_3
+
+	base_blueprints
+	{
+		effects/default
+	}
+
+	BombAmmoComponent
+	{		
+		DamagePattern
+		{
+			area_damage_radius	"50"
+			area_damage_speed 	"20"
+
+			Damages
+			{
+				Damage
+				{
+					value 			"40000"
+					type			"physical"
+				}
+			}
+		}
+	}	
+
+	ParticleDesc
+	{
+		name    "rift/crystal_wall_explosion"
+	}
+
+	CameraShakeDesc
+	{
+		duration 		"0.1"
+		power   		"0.5"
+		falloff_radius 	"20"
+		radius   		"30"
+		frequency 		"20"
+		group			"explosion_small"
+	}
+
+	SoundDesc
+	{
+		name "buildings_defense/crystal_wall_explosion"
+	}
+
+	DecalDesc
+	{	
+		blueprint "effects/decals/explosion_hole_random"
+		scale
+		{
+			x		2
+			y		2
+			z		2
+		}
+	}	
+}
+
+EntityBlueprint
+{
+	name effects/buildings_defense/explosion_crystal_gate_lvl_1
+
+	base_blueprints
+	{
+		effects/buildings_defense/explosion_crystal_wall_lvl_1
+	}
+	
+	ParticleDesc
+	{
+		name    "rift/crystal_gate_explosion"
+	}	
+
+	BombAmmoComponent
+	{		
+		DamagePattern
+		{
+			area_damage_radius	"80"
+			area_damage_speed 	"20"
+
+			Damages
+			{
+				Damage
+				{
+					value 			"10000"
+					type			"physical"
+				}
+			}
+		}
+	}	
+}	
+
+EntityBlueprint
+{
+	name effects/buildings_defense/explosion_crystal_gate_lvl_2
+
+	base_blueprints
+	{
+		effects/buildings_defense/explosion_crystal_wall_lvl_2
+	}
+	
+	ParticleDesc
+	{
+		name    "rift/crystal_gate_explosion"
+	}	
+
+	BombAmmoComponent
+	{		
+		DamagePattern
+		{
+			area_damage_radius	"80"
+			area_damage_speed 	"20"
+
+			Damages
+			{
+				Damage
+				{
+					value 			"20000"
+					type			"physical"
+				}
+			}
+		}
+	}	
+}	
+
+EntityBlueprint
+{
+	name effects/buildings_defense/explosion_crystal_gate_lvl_3
+
+	base_blueprints
+	{
+		effects/buildings_defense/explosion_crystal_wall_lvl_3
+	}
+	
+	ParticleDesc
+	{
+		name    "rift/crystal_gate_explosion"
+	}	
+
+	BombAmmoComponent
+	{		
+		DamagePattern
+		{
+			area_damage_radius	"80"
+			area_damage_speed 	"20"
+
+			Damages
+			{
+				Damage
+				{
+					value 			"40000"
+					type			"physical"
+				}
+			}
+		}
+	}	
+}	

@@ -1,0 +1,21 @@
+WorkspaceManifest
+{
+	description "ZW5lcmd5IHN0b3JhZ2UgeDEwMAo="
+	tags
+	{
+		String "Buildings"
+	}
+
+	modified_game_files
+	title "ZW5lcmd5IHN0b3JhZ2UgeDEwMCBieSBMaWxseQ=="
+	homepage
+	modio_published_file "4142268"
+	visibility "0"
+	game_version "EXE: 978 DATA: 573"
+	version "1.1.0"
+	localizations
+	author
+	steam_published_file "3282965885"
+	dependencies
+}
+

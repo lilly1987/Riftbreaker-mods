@@ -1,0 +1,21 @@
+WorkspaceManifest
+{
+	description "CgogICAgICAgICAgICBpZiAoIGtleSA9PSBFbnRpdHlNb2RUeXBlLmhlYWx0aCApIHRoZW4gaXRlbTpHZXRGaWVsZCgidmFsdWUiKTpTZXRWYWx1ZSgiMjAwMCIpCiAgICAgICAgZWxzZWlmICgga2V5ID09IEVudGl0eU1vZFR5cGUuaGVhbHRoX3JlZ2VuICkgdGhlbiBpdGVtOkdldEZpZWxkKCJ2YWx1ZSIpOlNldFZhbHVlKCIxMCIpCiAgICAgICAgZWxzZWlmICgga2V5ID09IEVudGl0eU1vZFR5cGUubW92ZW1lbnRfc3BlZWQgKSB0aGVuIGl0ZW06R2V0RmllbGQoInZhbHVlIik6U2V0VmFsdWUoIjMwIikKICAgICAgICBlbHNlaWYgKCBrZXkgPT0gRW50aXR5TW9kVHlwZS5mb3JjZWZpZWxkICkgdGhlbiBpdGVtOkdldEZpZWxkKCJ2YWx1ZSIpOlNldFZhbHVlKCIxMDAwIikKICAgICAgICBlbHNlaWYgKCBrZXkgPT0gRW50aXR5TW9kVHlwZS5yYWRhcl9yYW5nZSApIHRoZW4gaXRlbTpHZXRGaWVsZCgidmFsdWUiKTpTZXRWYWx1ZSgiODAiKQ=="
+	tags
+	{
+		String "Rebalance"
+	}
+
+	modified_game_files
+	title "bWVjaCBiYXNlIHN0YXRzIHVwIGJ5IGxpbGx5"
+	homepage
+	modio_published_file "4145562"
+	visibility "0"
+	game_version "EXE: 975 DATA: 570"
+	version "0.1.0"
+	localizations
+	author
+	steam_published_file "3283849018"
+	dependencies
+}
+

@@ -1,0 +1,5 @@
+
+0.0.0
+hp=(5000-hp2)/10+hp2*5
+
+lua\units\base_unit.lua

@@ -1,0 +1,21 @@
+WorkspaceManifest
+{
+	description "ZXg6ICdpdGVtcy93ZWFwb25zL3NtYWxsX21hY2hpbmVndW5faXRlbScgdG8gJ2l0ZW1zL3dlYXBvbnMvc21hbGxfbWFjaGluZWd1bl9leHRyZW1lX2l0ZW0nCgpsb2dpY1xsb2Fkb3V0XHBsYXllcl9sb2Fkb3V0X3N1cnZpdmFsKi5sb2dpYw=="
+	tags
+	{
+		String "Missions"
+	}
+
+	modified_game_files
+	title "cGxheWVyX2xvYWRvdXRfc3Vydml2YWwgSEFORCBpdGVtIHRvIGV4dHJlbWUgQnkgTGlsbHk="
+	homepage
+	modio_published_file "0"
+	visibility "0"
+	game_version "EXE: 975 DATA: 570"
+	version "0.0.0"
+	localizations
+	author
+	steam_published_file "0"
+	dependencies
+}
+

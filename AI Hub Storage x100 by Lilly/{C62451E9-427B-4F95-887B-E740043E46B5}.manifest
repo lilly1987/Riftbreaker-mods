@@ -1,0 +1,22 @@
+WorkspaceManifest
+{
+	description "QUkgSHViIFN0b3JhZ2UgeDEwMAoKdXNlIGFpX2h1Yl9zdG9yYWdlX3gxMDBfYnlfbGlsbHlfYXV0b2V4ZWMubHVhCgpEb2VzIG5vdCBjb25mbGljdCB3aXRoIG90aGVyIG1vZHM="
+	tags
+	{
+		String "Buildings"
+		String "Rebalance"
+	}
+
+	modified_game_files
+	title "QUkgSHViIFN0b3JhZ2UgeDEwMCBieSBMaWxseQ=="
+	homepage
+	modio_published_file "4142249"
+	visibility "0"
+	game_version "EXE: 978 DATA: 573"
+	version "1.2.0"
+	localizations
+	author
+	steam_published_file "3282964140"
+	dependencies
+}
+

@@ -1,0 +1,17 @@
+WorkspaceManifest
+{
+	description "ZWRpdCBlbnRpdGllc1xpdGVtc1xpbnRlcmFjdGl2ZVxleGNhdmF0b3IuZW50CgpQaHlzaWNzQm94U2hhcGUKewp4ICI4My41Igp5ICIyLjUiCnogIjEyLjUiCgpwb3NpdGlvbiAKewp4ICI0Mi4wIgp5ICIwLjAiCnogIjAuMCIKfQp9"
+	tags
+	modified_game_files
+	title "ZXhjYXZhdG9yIHNpemUgdXA="
+	homepage
+	modio_published_file "4161730"
+	visibility "0"
+	game_version "EXE: 978 DATA: 573"
+	version "1.0.0"
+	localizations
+	author
+	steam_published_file "3288128337"
+	dependencies
+}
+

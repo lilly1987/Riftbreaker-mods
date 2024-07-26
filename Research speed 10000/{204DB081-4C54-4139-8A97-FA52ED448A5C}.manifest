@@ -1,0 +1,23 @@
+WorkspaceManifest
+{
+	description "bm8gY2hhbmdlIGVudAp1c2UgbmV3IGx1YSBmaWxl"
+	tags
+	{
+		String "Buildings"
+		String "Rebalance"
+		String "Research"
+	}
+
+	modified_game_files
+	title "UmVzZWFyY2ggc3BlZWQgMTAwMDA="
+	homepage
+	modio_published_file "0"
+	visibility "0"
+	game_version "EXE: 975 DATA: 570"
+	version
+	localizations
+	author
+	steam_published_file "0"
+	dependencies
+}
+

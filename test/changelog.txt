@@ -1,0 +1,31 @@
+
+0.0.0
+local lua_name="test"
+local setup4=function(name1,t ,multi ,v)
+-----------------------------------------------
+local entitie=nil
+local entities1 = FindService:FindEntitiesByBlueprint(lua_name);
+if #entities1 > 0 then
+LogService:Log(" Already have : " .. lua_name)
+entitie=entities1[0]
+else
+entitie=EntityService:SpawnEntity(lua_name,0,0,0,"")
+LogService:Log(" SpawnEntity : " .. lua_name)
+end
+
+    local database1 = EntityService:GetDatabase( entitie )
+    if ( database1 == nil ) then
+        LogService:Log("no database : " .. lua_name)
+        return
+    end
+
+local k1=lua_name .. "/" .. name1 
+if database1:HasInt( k1) then
+LogService:Log(" Already applied : " .. name1)
+return
+else
+database1:SetInt( k1,1)
+LogService:Log(" database set : " .. name1)
+end
+-----------------------------------------------
+end

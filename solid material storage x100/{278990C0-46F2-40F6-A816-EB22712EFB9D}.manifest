@@ -1,0 +1,22 @@
+WorkspaceManifest
+{
+	description
+	tags
+	{
+		String "Buildings"
+		String "Rebalance"
+	}
+
+	modified_game_files
+	title "c29saWQgbWF0ZXJpYWwgc3RvcmFnZSB4MTAw"
+	homepage
+	modio_published_file "4145674"
+	visibility "0"
+	game_version "EXE: 975 DATA: 570"
+	version "0.1.1"
+	localizations
+	author
+	steam_published_file "3283896328"
+	dependencies
+}
+
