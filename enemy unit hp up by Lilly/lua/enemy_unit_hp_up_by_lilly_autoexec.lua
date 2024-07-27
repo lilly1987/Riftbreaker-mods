@@ -8,18 +8,16 @@ local setup2=function(blueprint,componentName)
     end
 	
 	local Field=Component:GetField( "max_health" )
-	local hp=(Field:GetValue())
-	LogService:Log("max_health get : " .. hp)
-	hp=(5000-hp)/10+hp*5
-	LogService:Log("max_health set : " .. hp)
-	Field:SetValue(tostring(hp))
+	local hp=tonumber(Field:GetValue())
+	local hp2=math.floor((5000-hp)/10+hp*5)
+	LogService:Log("max_health get : " .. tostring(hp) .. " , set : " .. tostring(hp2))
+	Field:SetValue(tostring(hp2))
 	
 	Field=Component:GetField( "health" )
-	hp=(Field:GetValue())
-	--LogService:Log("health get : " .. hp)
-	hp=(5000-hp)/10+hp*5
-	--LogService:Log("health set : " .. hp)
-	Field:SetValue(tostring(hp))
+	hp=tonumber(Field:GetValue())
+	hp2=math.floor((5000-hp)/10+hp*5)
+	LogService:Log("health get : " .. tostring(hp) .. " , set : " .. tostring(hp2))
+	Field:SetValue(tostring(hp2))
 end
 
 local setup3=function(blueprint_name)

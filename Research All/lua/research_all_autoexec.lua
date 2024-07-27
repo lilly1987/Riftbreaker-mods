@@ -422,6 +422,15 @@ local list={
 ,"gui/menu/research/name/wall_vine_lvl1"
 ,"gui/menu/research/name/wall_vine_lvl2"
 ,"gui/menu/research/name/wall_vine_lvl3"
+
+,"gui/menu/research/name/detector_equipment_advanced"
+,"gui/menu/research/name/detector_equipment_extreme"
+,"gui/menu/research/name/detector_equipment_standard"
+,"gui/menu/research/name/detector_equipment_superior"
+,"gui/menu/research/name/scanner_equipment_advanced"
+,"gui/menu/research/name/scanner_equipment_extreme"
+,"gui/menu/research/name/scanner_equipment_standard"
+,"gui/menu/research/name/scanner_equipment_superior"
 }
 
 local GetResearch=function(research)
