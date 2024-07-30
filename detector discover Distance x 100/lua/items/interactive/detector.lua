@@ -175,10 +175,10 @@ function detector:OnExecuteDetecting()
 		end
 
 		local factor = (distance - discoverDistance)  / ( radius - discoverDistance )
-		LogService:Log("Factor: " .. tostring(factor) )
-		LogService:Log("DiscoverDistance: " .. tostring(discoverDistance) )
-		LogService:Log("self.enemyRadius: " .. tostring(self.enemyRadius) )
-		LogService:Log("self.radius: " .. tostring(self.radius) )
+		--LogService:Log("Factor: " .. tostring(factor) )
+		--LogService:Log("DiscoverDistance: " .. tostring(discoverDistance) )
+		--LogService:Log("self.enemyRadius: " .. tostring(self.enemyRadius) )
+		--LogService:Log("self.radius: " .. tostring(self.radius) )
 
 		if ( distance > discoverDistance or type == "enemy" ) then
 			local mode = self:CheckAndSpawnEffect( ent, type, factor)

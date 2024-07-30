@@ -39,4 +39,7 @@ end
 	setup3("buildings/resources/liquid_pump")
 	setup3("buildings/resources/liquid_pump_lvl_2")
 	setup3("buildings/resources/liquid_pump_lvl_3")
+	setup3("buildings/resources/bio_condenser")
+	setup3("buildings/resources/bio_condenser_lvl_2")
+	setup3("buildings/resources/bio_condenser_lvl_3")
 --end)

@@ -3,9 +3,10 @@ MissionDef
     script          "lua/missions/survival/survival_desert.lua"
 	script_database
     {
-        objective_tile         string:"biomes/desert/tiles/desert_custom_rare_resource_01/desert_custom_rare_resource_01.tile"
-        objective_min_distance float:"128.0"
-        objective_max_distance float:"256.0"
+        //objective_tile         string:"biomes/desert/tiles/desert_custom_rare_resource_01/desert_custom_rare_resource_01.tile"
+        objective_tile         string:"biomes/desert/tiles/desert_lilly_06/desert_lilly_06.tile"
+        objective_min_distance float:"0.0"
+        objective_max_distance float:"128.0"
     }
 	localization_id	"campaigns/survival/desert_lilly.campaign"
     player_spawn_logic  "logic/loadout/player_loadout_survival_desert.logic"
@@ -17,56 +18,127 @@ MissionDef
 	
 	tile_spawn_rules
 	{		
+		biomes/desert/tiles/desert_custom_rare_resource_02_lilly/desert_custom_rare_resource_02_lilly.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
+		biomes/desert/tiles/desert_custom_rare_resource_01_Lilly/desert_custom_rare_resource_01_Lilly.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_plains_01_lilly/desert_plains_01_lilly.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_plains_02_lilly/desert_plains_02_lilly.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_plains_03_lilly/desert_plains_03_lilly.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_plains_04_lilly/desert_plains_04_lilly.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_plains_05_lilly/desert_plains_05_lilly.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_lilly_01/desert_lilly_01.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_lilly_02/desert_lilly_02.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_lilly_03/desert_lilly_03.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_lilly_04/desert_lilly_04.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_lilly_05/desert_lilly_05.tile
+		{
+			min_instances 1
+			random_weight	2.0
+		}
 		biomes/desert/tiles/desert_lilly_06/desert_lilly_06.tile
 		{
 			min_instances 1
+			random_weight	2.0
 		}
-		biomes/desert/tiles/desert_canyons_02/desert_canyons_02.tile
+		biomes/desert/tiles/desert_lilly_07/desert_lilly_07.tile
 		{
-			max_instances	1			
+			min_instances 1
+			random_weight	2.0
 		}
-		biomes/desert/tiles/desert_canyons_05/desert_canyons_05.tile
+		biomes/desert/tiles/desert_lilly_08/desert_lilly_08.tile
 		{
-			max_instances	1	
+			min_instances 1
+			random_weight	2.0
 		}
-		biomes/desert/tiles/desert_canyons_06/desert_canyons_06.tile
+		biomes/desert/tiles/desert_canyons_04_lilly/desert_canyons_04_lilly.tile
 		{
-			max_instances	1	
+			min_instances 1
+			random_weight	2.0
 		}
-		biomes/desert/tiles/desert_canyons_07/desert_canyons_07.tile
+		biomes/desert/tiles/desert_canyons_06_lilly/desert_canyons_06_lilly.tile
 		{
-			max_instances	1			
+			min_instances 1
+			random_weight	2.0
 		}
-		biomes/desert/tiles/desert_plains_01/desert_plains_01.tile
-		{
-			max_instances	1			
-		}
-		biomes/desert/tiles/desert_plains_02/desert_plains_02.tile
-		{
-			max_instances	1			
-		}
-		biomes/desert/tiles/desert_plains_03/desert_plains_03.tile
-		{
-			max_instances	1			
-		}
-		biomes/desert/tiles/desert_plains_05/desert_plains_05.tile
-		{
-			max_instances	1			
-		}
-		biomes/desert/tiles/desert_custom_rare_resource_01/desert_custom_rare_resource_01.tile
-		{			
-			max_instances 1
-		}
+		//biomes/desert/tiles/desert_canyons_02/desert_canyons_02.tile
+		//{
+		//	max_instances	1			
+		//}
+		//biomes/desert/tiles/desert_canyons_05/desert_canyons_05.tile
+		//{
+		//	max_instances	1	
+		//}
+		//biomes/desert/tiles/desert_canyons_06/desert_canyons_06.tile
+		//{
+		//	max_instances	1	
+		//}
+		//biomes/desert/tiles/desert_canyons_07/desert_canyons_07.tile
+		//{
+		//	max_instances	1			
+		//}
+		//biomes/desert/tiles/desert_plains_01/desert_plains_01.tile
+		//{
+		//	max_instances	1			
+		//}
+		//biomes/desert/tiles/desert_plains_02/desert_plains_02.tile
+		//{
+		//	max_instances	1			
+		//}
+		//biomes/desert/tiles/desert_plains_03/desert_plains_03.tile
+		//{
+		//	max_instances	1			
+		//}
+		//biomes/desert/tiles/desert_plains_05/desert_plains_05.tile
+		//{
+		//	max_instances	1			
+		//}
+		//biomes/desert/tiles/desert_custom_rare_resource_01/desert_custom_rare_resource_01.tile
+		//{			
+		//	max_instances 1
+		//}
 	}	
 	
     creature_volumes_min_distance   "128.0"

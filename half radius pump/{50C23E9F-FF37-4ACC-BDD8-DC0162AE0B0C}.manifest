@@ -8,12 +8,12 @@ WorkspaceManifest
 	}
 
 	modified_game_files
-	title "aGFsZiByYWRpdXMgcHVtcCAoeDAuNSk="
+	title "aGFsZiByYWRpdXMgcHVtcCAoeDAuNSkgKHdpdGggYmlvX2NvbmRlbnNlcik="
 	homepage
 	modio_published_file "4183034"
 	visibility "0"
 	game_version "EXE: 978 DATA: 573"
-	version "1.0.0"
+	version "1.1.0"
 	localizations
 	author
 	steam_published_file "3292931421"

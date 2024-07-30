@@ -1,0 +1,70 @@
+buildings/defense/tower_railgun_super
+{
+	WeaponItemDesc
+	{
+		ammo_storage 
+		damage_type "energy"
+		rarity "EXTREME"
+		stat_def_vec
+		{
+			WeaponStatDef
+			{
+				max_value "300000.000"
+				min_value "300000.000"
+				stat_features "BASE_MINMAX|MODABLE|STATISTIC"
+				stat_type "DAMAGE_VALUE"
+			}
+
+			WeaponStatDef
+			{
+				max_value "2.00"
+				min_value "2.00"
+				stat_features "BASE_MINMAX|MODABLE|STATISTIC"
+				stat_type "FIRE_RATE"
+			}
+
+			WeaponStatDef
+			{
+				max_value "1.000"
+				min_value "1.000"
+				stat_features "BASE_MINMAX|MODABLE"
+				stat_type "FIRE_PER_BURST"
+			}
+
+			WeaponStatDef
+			{
+				max_value "1.000"
+				min_value "1.000"
+				stat_features "BASE_MINMAX|MODABLE"
+				stat_type "FIRE_PER_SHOT"
+			}
+
+			WeaponStatDef
+			{
+				max_value "32.000"
+				min_value "32.000"
+				stat_features "BASE_MINMAX|MODABLE|STATISTIC"
+				stat_type "DAMAGE_PENETRATION"
+			}
+
+			WeaponStatDef
+			{
+				max_value "1320.000"
+				min_value "1320.000"
+				stat_features "BASE_MINMAX|MODABLE"
+				stat_type "BEAM_RANGE"
+			}
+
+			WeaponStatDef
+			{
+				max_value "3.000"
+				min_value "3.000"
+				stat_features "BASE_MINMAX"
+				stat_type "BEAM_WIDTH"
+			}
+
+		}
+
+	}
+
+}

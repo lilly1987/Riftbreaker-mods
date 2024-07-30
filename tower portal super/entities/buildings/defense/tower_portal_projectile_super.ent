@@ -1,0 +1,80 @@
+EntityBlueprint
+{
+	name "buildings/defense/tower_portal_projectile_super"
+
+	MeshDesc
+	{
+		mesh "meshes/projectiles/tower_portal_bomb.mesh"
+		material "projectiles/tower_portal_bomb"
+	}
+
+	SkeletonDesc
+	{
+		name "meshes/projectiles/tower_portal_bomb"
+	}
+
+	MinimapItemDesc
+	{
+		type	"quad"
+		color
+		{
+			x "1"
+			y "1"
+			z "0"
+			w "1"
+		}
+		size
+		{
+			x "2"
+			y "2"
+		}
+
+		visibility			"radar"
+	}
+
+	VegetationBendingComponentDesc
+	{
+		bending_power	"5000.0"
+		bending_radius	"5.0"
+	}
+
+	SoundDesc
+	{
+		name 		"items/weapons/explosive/rocket_projectile_medium"
+	}
+
+	EffectDesc
+	{
+		EffectGroup
+		{
+			Effects
+			{
+				Effect
+				{
+					blueprint "effects/projectiles_and_trails/tower_portal_bomb_projectile"
+				}
+			}
+		}
+	}
+
+	FlakAmmoComponent
+	{
+		explosion_effect 		"effects/weapons_explosive/tower_portal_bomb_explosion"
+		explosion_delay 		"0.5"
+
+		DamagePattern
+		{
+			area_damage_speed	"60"
+		}
+	}
+		
+	LuaDesc
+	{
+		script "lua/buildings/defense/tower_portal_bomb.lua"
+
+		database
+		{
+
+		}
+	}
+}

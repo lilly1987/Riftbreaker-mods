@@ -1,7 +1,90 @@
 -- test_autoexec.lua
 
+-- morphium
+-- * BlueprintComponent
+--   blueprint : nil
+-- * GridMarkerComponent
+--   mode : 1
+--   indexes : nil
+--   pos : nil
+--   Layers : nil
+--   terrain_type : morphium
+--   layers_template : nil
+--   indexes_ents : nil
+--   extend : 0.000
+-- * TypeComponent
+--   type : 16384
+-- * LocalAabbDesc
+--   local_aabb : nil
+
 -- 이런 함수를 쓸려면 반드시 RegisterGlobalEventHandler 사용 필수. 자동으로 호출됨
 --require("lua/utils/reflection.lua")
+
+-- unsigned int SpawnEntity(EntityService&,custom [class Exor::Math::Vector3<float>] const&)
+-- unsigned int SpawnEntity(EntityService&,unsigned int)
+-- unsigned int SpawnEntity(EntityService&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,unsigned int,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,custom [struct Exor::TeamId])
+-- unsigned int SpawnEntity(EntityService&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,unsigned int,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&)
+-- unsigned int SpawnEntity(EntityService&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,unsigned int,custom [struct Exor::TeamId])
+-- unsigned int SpawnEntity(EntityService&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,unsigned int,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&)
+-- unsigned int SpawnEntity(EntityService&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&)
+-- unsigned int SpawnEntity(EntityService&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,custom [float],custom [float],custom [float],custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&)
+-- unsigned int SpawnEntity(EntityService&,custom [class Exor::UtfString<char,class Exor::utf_traits<char>,class Exor::StlAllocatorProxy<char> >] const&,custom [class Exor::Math::Vector3<float>] const&,custom [struct Exor::TeamId])stack traceback:
+
+--     position.y = EnvironmentService:GetTerrainHeight(position)
+    
+	--local players = PlayerService:GetPlayersFromTeam( EntityService:GetTeam( "player") );
+    --for player in Iter(players) do
+    --    PlayerService:AddItemToInventory( player, missionDefHelper.mission_award )
+    --end
+
+	--local Blueprint = ResourceManager:GetBlueprint( item[1] )
+	--local Component = Blueprint:GetComponent("BuildingDesc")
+	--local Component = EntityService:GetBlueprintComponent(item[1], "BuildingDesc")
+		
+-- local mech = PlayerService:GetPlayerControlledEnt( player)
+-- local items = PlayerService:GetAllEquippedItemsInSlot( "LEFT_HAND" , player)
+-- local entities =  FindService:FindEntitiesByTypeInRadius( self.entity , "player", 10)
+-- local mech = entities[1]
+-- local player = PlayerService:GetPlayerByMech( mech )
+-- local pos = PlayerService:GetWeaponLookPoint( self.owner )
+-- self.foundPos = PlayerService:FindPositionForTeleport( self.owner, pos, self.maxDistance )
+-- result = FindService:FindEmptySpotInRadius( owner, self.plant_radius, "vegetation", "floor,desert_floor,acid_floor,magma_floor");
+-- local pos = FindService:FindEmptySpotForBuildingRadius( self.owner, 6.0, self.bp, "", "")
+-- local ent = ResourceService:FindEmptySpace( minDistanceFromPlayer, maxDistanceFromPlayer );
+
+-- local Entity=MapGenerator:GetInitialSpawnPoint()
+-- local Position=EntityService:GetPosition(Entity)
+-- local spot=FindService:FindEmptySpotInRadius(Entity,  512,"","")
+-- local f=spot.first
+-- local Position=spot.second
+local test4=function ()
+	local playable_min = MissionService:GetPlayableRegionMin();
+    local playable_max = MissionService:GetPlayableRegionMax();
+	
+	local Entities = FindService:FindEntitiesByPredicateInBox( playable_min, playable_max, {
+		type="",
+		signature="ResourceComponent,GridMarkerComponent",		
+		filter = function(entity) 
+			--if string.find(EntityService:GetBlueprintName(entity), resources) ~=nil then
+			if EntityService:GetResourceAmount(entity).first ~= "morphium" then
+                return false
+            end
+			--LogService:Log( " resources : " .. resources .. " ; " .. make .. " , " .. (EntityService:GetResourceAmount(entity).first))
+			--local Position=EntityService:GetPosition(entity)
+			--LogService:Log(" Position : x : " .. Position.x .. " , y : " .. Position.y .. " , z : " .. Position.z .. " , " .. tostring(FindService:IsGridMarkedWithLayer(Position, "OwnerLayerComponent")) .. " , " .. tostring(EntityService:GetResourceAmount(entity).first))
+			return true
+		end
+	});
+
+	local blueprint = ResourceManager:GetBlueprint(EntityService:GetBlueprintName(Entities[ math.random( #Entities ) ]))
+	for _,componentName in pairs( blueprint:GetComponentNames() ) do
+		LogService:Log(" * " .. componentName)
+		local Component = blueprint:GetComponent(componentName)
+		for _,FieldName in pairs( Component:GetFieldNames() ) do
+			LogService:Log("   " .. FieldName .. " : " .. tostring(Component:GetField( FieldName ):GetValue()	))
+		end
+	end
+end
 
 local setup6=function(blueprint_name)
 	LogService:Log(" run : " .. blueprint_name)
@@ -190,12 +273,16 @@ local logBlueprint=function(name1)
 	-----------------------------------------------
 end
 
+RegisterGlobalEventHandler("CheatUsedEvent", function(evt)
+	LogService:Log("CheatUsedEvent : " .. evt:GetCheatName())
+end)
+
 RegisterGlobalEventHandler("MissionFlowActivatedEvent", function(evt)
 LogService:Log("MissionFlowActivatedEvent")
 end)
 
 RegisterGlobalEventHandler("MissionFlowDeactivatedEvent", function(evt)
-LogService:Log("MissionFlowDeactivatedEvent")
+	LogService:Log("MissionFlowDeactivatedEvent")
 end)
 
 -----
@@ -215,7 +302,10 @@ end)
 -- * (): [PlayerInfo const&](riftbreaker-wiki/docs/reflection/PlayerInfo const&)
 -- 맵마다, 세이브 로드시에도 호출됨
 RegisterGlobalEventHandler("PlayerCreatedEvent", function(evt)
-	LogService:Log(" PlayerCreatedEvent")
+	LogService:Log("PlayerCreatedEvent")
+	LogService:Log(" Entity : " .. tostring(evt:GetEntity()))
+	LogService:Log(" Entity : " .. EntityService:GetBlueprintName(evt:GetEntity()))
+	LogService:Log(" playerId : " .. evt:GetPlayerId())
 	--logBlueprint("items/skills/radar_pulse_item")
 	
 	-- critical
@@ -235,21 +325,34 @@ RegisterGlobalEventHandler("PlayerCreatedEvent", function(evt)
 		
 	-- no database
 	-- test(entity)	
+	
 end)
 
+--| [Entity](/riftbreaker-wiki/docs/game-reflection/classes/entity/) | Entity |
+--| [TeamId](/riftbreaker-wiki/docs/game-reflection/classes/team_id/) | TeamId |
 RegisterGlobalEventHandler("PlayerTeamCreatedEvent", function(evt)
-	LogService:Log("PlayerTeamCreatedEvent")
+	LogService:Log("PlayerTeamCreatedEvent ")
+	LogService:Log(" Entity : " .. tostring(evt:GetEntity()))
+	--LogService:Log(" Entity : " .. EntityService:GetBlueprintName(evt:GetEntity())) --nil
+	LogService:Log(" TeamId : " .. evt:GetTeamId()) -- 1
 	-- evt:GetEntity() 사용시 database 없음
+	--local players = PlayerService:GetPlayersFromTeam( team)
+	--for player in Iter(players ) do
+	--	local playerEntity = PlayerService:GetPlayerControlledEnt( player )
+	--	LogService:Log("playerEntity : " .. playerEntity)
+	--end
 end)
 
 
-RegisterGlobalEventHandler("CheatUsedEvent", function(evt)
-	LogService:Log(" CheatUsedEvent : " .. evt:GetCheatName())
-end)
 
+--| [Entity](/riftbreaker-wiki/docs/game-reflection/classes/entity/) | Entity |
+--| [uint](/riftbreaker-wiki/docs/game-reflection/components/uint/) | PlayerId |
 -- 미션 시작후 . 재시작. 
 RegisterGlobalEventHandler("PlayerInitializedEvent", function(evt)
-	LogService:Log("PlayerInitializedEvent")
+	LogService:Log("PlayerInitializedEvent ")
+	LogService:Log(" Entity : " .. tostring(evt:GetEntity()))
+	LogService:Log(" Entity : " .. EntityService:GetBlueprintName(evt:GetEntity()))
+	LogService:Log(" playerId : " .. evt:GetPlayerId())
 	--logBlueprint("items/skills/radar_pulse_item")
 	
 	--local playerId=evt:GetPlayerId()
@@ -266,6 +369,24 @@ RegisterGlobalEventHandler("PlayerInitializedEvent", function(evt)
 	LogService:Log("GetCurrentBiomeName : " .. MissionService:GetCurrentBiomeName()) -- 	
 end)
 
+-- player_respawner.lua
+--    local player_id = PlayerService:GetPlayerForEntity( self.entity )
+--    QueueEvent( "PlayerSpawnRequest", INVALID_ID, player_id, self.entity )
+--| [Entity](/riftbreaker-wiki/docs/game-reflection/classes/entity/) | Entity |
+--| [uint](/riftbreaker-wiki/docs/game-reflection/components/uint/) | PlayerId |
+--| [Entity](/riftbreaker-wiki/docs/game-reflection/classes/entity/) | SpawnPoint |
+RegisterGlobalEventHandler("PlayerSpawnRequest", function(evt)
+	LogService:Log("PlayerSpawnRequest ")
+	LogService:Log(" Entity : " .. tostring(evt:GetEntity())) --player_respawner.lua INVALID_ID --4294967295
+	--LogService:Log(" Entity : " .. EntityService:GetBlueprintName(evt:GetEntity())) -- nil
+	local PlayerId=evt:GetPlayerId()
+	LogService:Log(" PlayerId : " .. PlayerId)
+	-- local player_id = PlayerService:GetPlayerForEntity( evt:GetEntity() )
+	-- LogService:Log(" player_id : " .. player_id)	--4294967295==PlayerSpawnRequest.Entity
+	local SpawnPoint=evt:GetSpawnPoint()
+	LogService:Log(" SpawnPoint : " .. SpawnPoint)	
+end)
+
 
 RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	LogService:Log("PlayerControlledEntityChangeEvent")
@@ -274,21 +395,30 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	--local playerId=evt:GetPlayerId()
 	--LogService:Log(" playerId : " .. tostring(playerId)) 
 	--
-	--local entity=evt:GetEntity()
-	--LogService:Log(" entity : " .. tostring(entity)) 
+	local entity=evt:GetEntity()
+	LogService:Log(" entity : " .. tostring(entity)) 
+	--LogService:Log(" Entity : " .. EntityService:GetBlueprintName(evt:GetEntity()))
 	
 	-- 맵마다 달라짐
 	local controlledEntity=evt:GetControlledEntity()
 	LogService:Log(" controlledEntity : " .. tostring(controlledEntity)) 
+	LogService:Log(" GetTeam : " .. EntityService:GetTeam( controlledEntity )) 
 	
 	-- no database
 	-- test(entity)
 	
 	-- yes database
 	-- test(controlledEntity)
+	
+	-- test4()
 end)
 
+
+
 -- 스크립트 종료시마다
+--| [Entity](/riftbreaker-wiki/docs/game-reflection/classes/entity/) | argName1 |
+--| [String](/riftbreaker-wiki/docs/game-reflection/components/string/) | argName2 |
+--| [Database](/riftbreaker-wiki/docs/game-reflection/components/database/) | argName3 |
 RegisterGlobalEventHandler("LuaGlobalEvent", function(evt)
 	local text=evt:GetEvent()
 	if text =="ShowBuildingDisplayRadius" or text =="HideBuildingDisplayRadius" then
@@ -370,17 +500,17 @@ local setup2=function(name1,t ,multi ,v)
         return
     end
 	-----------------------------------------------
-	local database1 = CampaignService:GetCampaignData()
-    if ( database1 == nil ) then
-        LogService:Log("NOT EXISTS database ")
+	local database = CampaignService:GetCampaignData()
+    if ( database == nil ) then
+        LogService:Log("database no")
         return
     end
 	local k1="test.lua/" 
-	if database1:HasInt( k1) then
-		LogService:Log(" Already applied " )
+	if database:HasInt( k1) then
+		LogService:Log(" database has " )
 		return
 	else
-		database1:SetInt( k1,1)
+		database:SetInt( k1,1)
 		LogService:Log(" database set " )
 	end
 	-----------------------------------------------
@@ -552,3 +682,4 @@ end
 -- sellable : 1
 -- erase_type : nil
 -- disableable : 1
+

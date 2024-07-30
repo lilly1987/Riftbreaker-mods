@@ -471,7 +471,7 @@ local mainRun= function(evt)
 	--local items = PlayerService:GetResearchesAvailableToUnlockList( false )
 	local items = list
 	for _, item in ipairs(items) do		
-		LogService:Log(" Research : " .. item )
+		--LogService:Log(" Research : " .. item )
 		GetResearch(item)
 	end
 	

@@ -1,6 +1,6 @@
 WorkspaceManifest
 {
-	description "bHVhXGl0ZW1zXGludGVyYWN0aXZlXGRldGVjdG9yLmx1YQ=="
+	description "ZWRpdCBsdWFcaXRlbXNcaW50ZXJhY3RpdmVcZGV0ZWN0b3IubHVh"
 	tags
 	{
 		String "Items"
@@ -11,8 +11,8 @@ WorkspaceManifest
 	homepage
 	modio_published_file "4145347"
 	visibility "0"
-	game_version "EXE: 975 DATA: 570"
-	version "0.0.0"
+	game_version "EXE: 978 DATA: 573"
+	version "0.0.1"
 	localizations
 	author
 	steam_published_file "3283775370"

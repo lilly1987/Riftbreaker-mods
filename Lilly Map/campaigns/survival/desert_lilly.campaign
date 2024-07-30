@@ -1,7 +1,7 @@
 CampaignDef
 {
 	campaign_type				 "survival"
-    startup_mission_def          "survival/desert"
+    startup_mission_def          "survival/desert_lilly"
 	startup_mission_name		 "Headquarters"
 	
 	research_tree				 "research_tree_survival"

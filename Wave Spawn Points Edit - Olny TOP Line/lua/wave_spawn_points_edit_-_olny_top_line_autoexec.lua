@@ -1,3 +1,9 @@
+local SpawnEntity=function (name,x,y,z,team)
+	local position={x=x,y=y,z=z}
+	-- GetTerrainHeight( const Vector3 & pos )
+	position.y = EnvironmentService:GetTerrainHeight(position)
+	return EntityService:SpawnEntity( name,position.x,position.y,position.z,team )
+end
 
 local GetNonPlayableRegionsMy=function(t)
     return
@@ -113,6 +119,17 @@ RegisterGlobalEventHandler("LuaGlobalEvent", function(evt)
 	
 end)
 
+local positionFixEntity=function (Entity)
+	local position = EntityService:GetPosition(Entity)
+	position.y = EnvironmentService:GetTerrainHeight(position)
+	
+	EntityService:SetWorldPosition(Entity, position)	
+end
+local positionFix=function (position)
+	position.y = EnvironmentService:GetTerrainHeight(position)
+end
+
+
 RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	LogService:Log(" PlayerControlledEntityChangeEvent ")
 	----------------
@@ -149,17 +166,17 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	
 	local margin1=4
 	
-	EntityService:SpawnEntity( "buildings/defense/portal",0,2,0,"player" ) 
-	
-	EntityService:SpawnEntity( "buildings/defense/portal",playable_min.x+margin*margin1,2,playable_max.z-margin*margin1,"player" ) 
-	EntityService:SpawnEntity( "buildings/defense/portal",playable_min.x+margin*margin1,2,playable_min.z+margin*margin1,"player" ) 
-	EntityService:SpawnEntity( "buildings/defense/portal",playable_max.x-margin*margin1,2,playable_min.z+margin*margin1,"player" ) 
-	EntityService:SpawnEntity( "buildings/defense/portal",playable_max.x-margin*margin1,2,playable_max.z-margin*margin1,"player" ) 
-	
-	EntityService:SpawnEntity( "buildings/defense/portal",0,2,playable_max.z-margin*margin1,"player" ) 
-	EntityService:SpawnEntity( "buildings/defense/portal",0,2,playable_min.z+margin*margin1,"player" ) 
-	EntityService:SpawnEntity( "buildings/defense/portal",playable_max.x-margin*margin1,2,0,"player" ) 
-	EntityService:SpawnEntity( "buildings/defense/portal",playable_max.x-margin*margin1,2,0,"player" ) 
+	SpawnEntity( "buildings/defense/portal",0,2,0,"player" ) 
+
+	SpawnEntity( "buildings/defense/portal",playable_min.x+margin*margin1,2,playable_max.z-margin*margin1,"player" ) 
+	SpawnEntity( "buildings/defense/portal",playable_min.x+margin*margin1,2,playable_min.z+margin*margin1,"player" ) 
+	SpawnEntity( "buildings/defense/portal",playable_max.x-margin*margin1,2,playable_min.z+margin*margin1,"player" ) 
+	SpawnEntity( "buildings/defense/portal",playable_max.x-margin*margin1,2,playable_max.z-margin*margin1,"player" ) 
+
+	SpawnEntity( "buildings/defense/portal",0,2,playable_max.z-margin*margin1,"player" ) 
+	SpawnEntity( "buildings/defense/portal",0,2,playable_min.z+margin*margin1,"player" ) 
+	SpawnEntity( "buildings/defense/portal",playable_max.x-margin*margin1,2,0,"player" ) 
+	SpawnEntity( "buildings/defense/portal",playable_max.x-margin*margin1,2,0,"player" ) 
 
 	-- TOP Center
 	--if rt>0 then

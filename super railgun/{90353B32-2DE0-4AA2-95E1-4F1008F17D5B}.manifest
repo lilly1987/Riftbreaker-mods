@@ -1,0 +1,21 @@
+WorkspaceManifest
+{
+	description
+	tags
+	{
+		String "Buildings"
+	}
+
+	modified_game_files
+	title "c3VwZXIgcmFpbGd1bg=="
+	homepage
+	modio_published_file "0"
+	visibility "0"
+	game_version "EXE: 978 DATA: 573"
+	version
+	localizations
+	author
+	steam_published_file "0"
+	dependencies
+}
+
