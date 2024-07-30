@@ -10,18 +10,18 @@ local setup2=function(blueprint,componentName)
 	local Field=Component:GetField( "max_health" )
 	local hp=tonumber(Field:GetValue())
 	local hp2=math.floor((5000-hp)/10+hp*5)
-	LogService:Log("max_health get : " .. tostring(hp) .. " , set : " .. tostring(hp2))
+	--LogService:Log("max_health get : " .. tostring(hp) .. " , set : " .. tostring(hp2))
 	Field:SetValue(tostring(hp2))
 	
 	Field=Component:GetField( "health" )
 	hp=tonumber(Field:GetValue())
 	hp2=math.floor((5000-hp)/10+hp*5)
-	LogService:Log("health get : " .. tostring(hp) .. " , set : " .. tostring(hp2))
-	Field:SetValue(tostring(hp2))
+	--LogService:Log("health get : " .. tostring(hp) .. " , set : " .. tostring(hp2))
+	Field:SetValue(tostring(hp2))	
 end
 
 local setup3=function(blueprint_name)
-	LogService:Log(" run : " .. blueprint_name)
+	--LogService:Log(" run : " .. blueprint_name)
 	-----------------------------------------------
 	local my="player/character_base"
 	local database = EntityService:GetBlueprintDatabase( my )

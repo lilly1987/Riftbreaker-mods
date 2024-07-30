@@ -14,37 +14,103 @@ MissionDef
 	
 	tile_spawn_rules
 	{
-biomes/metallic/tiles/metallic_canyons_01_lilly/metallic_canyons_01_lilly.tile                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_canyons_02_lilly/metallic_canyons_02_lilly.tile                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_canyons_03_lilly/metallic_canyons_03_lilly.tile                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_canyons_04_lilly/metallic_canyons_04_lilly.tile                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_custom_alien_core_01_lilly/metallic_custom_alien_core_01_lilly.tile 	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_custom_crater_big_01_lilly/metallic_custom_crater_big_01_lilly.tile 	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lakes_01_lilly/metallic_lakes_01_lilly.tile                         	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lakes_02_lilly/metallic_lakes_02_lilly.tile                         	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_01/metallic_lilly_01.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_02/metallic_lilly_02.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_03/metallic_lilly_03.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_04/metallic_lilly_04.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_05/metallic_lilly_05.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_06/metallic_lilly_06.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_07/metallic_lilly_07.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_08/metallic_lilly_08.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_lilly_09/metallic_lilly_09.tile                                     	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_plains_01_lilly/metallic_plains_01_lilly.tile                       	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_plains_02_lilly/metallic_plains_02_lilly.tile                       	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_plains_03_lilly/metallic_plains_03_lilly.tile                       	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_plains_04_lilly/metallic_plains_04_lilly.tile                       	{	random_weight	2.0  }
-biomes/metallic/tiles/metallic_plains_05_lilly/metallic_plains_05_lilly.tile 	                   	{	random_weight	2.0  }
-		//biomes/metallic/tiles/metallic_lakes_01/metallic_lakes_01.tile
-		//{			
-		//	min_instances	3	
-		//	random_weight	1.0
-		//}		
-		//biomes/metallic/tiles/metallic_lakes_02/metallic_lakes_02.tile
-		//{					
-		//	min_instances	3			
-		//}	
+biomes/metallic/tiles/metallic_canyons_01_lilly/metallic_canyons_01_lilly.tile                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_canyons_02_lilly/metallic_canyons_02_lilly.tile                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_canyons_03_lilly/metallic_canyons_03_lilly.tile                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_canyons_04_lilly/metallic_canyons_04_lilly.tile                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_custom_alien_core_01_lilly/metallic_custom_alien_core_01_lilly.tile
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_custom_crater_big_01_lilly/metallic_custom_crater_big_01_lilly.tile
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lakes_01_lilly/metallic_lakes_01_lilly.tile                        
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lakes_02_lilly/metallic_lakes_02_lilly.tile                        
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_01/metallic_lilly_01.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_02/metallic_lilly_02.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_03/metallic_lilly_03.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_04/metallic_lilly_04.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_05/metallic_lilly_05.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_06/metallic_lilly_06.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_07/metallic_lilly_07.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_08/metallic_lilly_08.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_lilly_09/metallic_lilly_09.tile                                    
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_plains_01_lilly/metallic_plains_01_lilly.tile                      
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_plains_02_lilly/metallic_plains_02_lilly.tile                      
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_plains_03_lilly/metallic_plains_03_lilly.tile                      
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_plains_04_lilly/metallic_plains_04_lilly.tile                      
+		{					
+			min_instances	1			
+		}
+biomes/metallic/tiles/metallic_plains_05_lilly/metallic_plains_05_lilly.tile 	                  
+		{					
+			min_instances	1			
+		}
+		biomes/metallic/tiles/metallic_lakes_01/metallic_lakes_01.tile
+		{			
+			min_instances	1	
+			random_weight	1.0
+		}		
+		biomes/metallic/tiles/metallic_lakes_02/metallic_lakes_02.tile
+		{					
+			min_instances	1			
+		}	
 	}
 
    ambient_creature_species

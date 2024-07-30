@@ -1,5 +1,5 @@
 local setup3=function(blueprint_name)
-	LogService:Log(" run : " .. blueprint_name)
+	--LogService:Log(" run : " .. blueprint_name)
 	-----------------------------------------------
 	local my="player/character_base"
 	local database = EntityService:GetBlueprintDatabase( my )
@@ -13,7 +13,7 @@ local setup3=function(blueprint_name)
 		return
 	else
 		database:SetInt( k,1)
-		LogService:Log(" database set : " .. blueprint_name)
+		--LogService:Log(" database set : " .. blueprint_name)
 	end
 	-----------------------------------------------
 	local blueprint = ResourceManager:GetBlueprint(blueprint_name)
@@ -26,9 +26,9 @@ local setup3=function(blueprint_name)
 	--	LogService:Log("   " .. FieldName .. " : " .. tostring(Component:GetField( FieldName ):GetValue()	))
 	--end
 	local Field=Component:GetField( "building_functionality" )
-	LogService:Log("building_functionality : " .. Field:GetValue())
+	--LogService:Log("building_functionality : " .. Field:GetValue())
 	Field:SetValue("10")
-	LogService:Log("building_functionality set : " .. blueprint_name)
+	LogService:Log("building_functionality : " .. blueprint_name .. " : " .. Field:GetValue())
 		
 end
 
@@ -75,7 +75,7 @@ local list={
 ,"buildings/defense/wall_small_straight_01"
 ,"buildings/defense/wall_small_straight_01_lvl_2"
 ,"buildings/defense/wall_small_straight_01_lvl_3"
-,"buildings/defense/wall_small_tile_01"
+--,"buildings/defense/wall_small_tile_01"
 ,"buildings/defense/wall_small_t_01"
 ,"buildings/defense/wall_small_t_01_lvl_2"
 ,"buildings/defense/wall_small_t_01_lvl_3"

@@ -1,7 +1,7 @@
 --require("lua/utils/reflection.lua")
 
 local ResourceStorageDescSetup=function (name1,t ,v )
-	LogService:Log(" run : " .. name1)
+	--LogService:Log(" run : " .. name1)
 	
 	local database = EntityService:GetBlueprintDatabase( name1 )
     if ( database == nil ) then
@@ -14,7 +14,7 @@ local ResourceStorageDescSetup=function (name1,t ,v )
 		return
 	else
 		database:SetFloat( "ResourceStorageDescSetup" ,1)
-		LogService:Log(" database set : " .. name1)
+		--LogService:Log(" database set : " .. name1)
 	end
 	
     local Blueprint = ResourceManager:GetBlueprint( name1 )
@@ -22,7 +22,7 @@ local ResourceStorageDescSetup=function (name1,t ,v )
         LogService:Log("NOT EXISTS 1 : " .. name1)
         return
     end
-	LogService:Log(" Blueprint : " .. name1)
+	--LogService:Log(" Blueprint : " .. name1)
 	
 	--local desc = reflection_helper(BuildingService:GetBuildingDesc( Blueprint ))
     --if ( desc == nil ) then
@@ -38,8 +38,8 @@ local ResourceStorageDescSetup=function (name1,t ,v )
         LogService:Log("NOT EXISTS 2 : " .. name1)
         return
     end
-	LogService:Log(" Component : " .. name1)
-	LogService:Log(" value : " .. Component:GetField( t ):GetValue())
+	--LogService:Log(" Component : " .. name1)
+	LogService:Log(name1 .. " : " .. Component:GetField( t ):GetValue() .. " , " .. tostring(v))
 	
 	Component:GetField( t ):SetValue(tostring(v))
 end

@@ -18,7 +18,8 @@ local list={
 	{ "buildings/defense/ai_hub_lvl_3" , 4,1},
 	
 	{ "buildings/energy/energy_storage_lvl_3" , 4 ,0},
-	{ "buildings/resources/ammunition_storage_lvl_3" , 4,0},
+	{ "buildings/resources/ammunition_storage_lvl_3" , 18,0},
+	{ "buildings/resources/solid_material_storage_lvl_3" , 16,0},
 	
 	{ "buildings/main/armory_lvl_5" , 5,3},
 	--{ "buildings/main/communications_hub_lvl_5" , 5,10},
@@ -231,15 +232,11 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	else
 		database:SetInt( k1,1)
 		LogService:Log(" database set " )
-	end
-	-----------------------------------------------
-	
+	end	
 	-----------------------------------------------
 	--local Entity=MissionService:GetPlayerSpawnPoint()--err
 	local Player=MapGenerator:GetInitialSpawnPoint()
 	local Position=EntityService:GetPosition(Player)
-	--LogService:Log(" Position : x : " .. Position.x .. " , y : " .. Position.y .. " , z : " .. Position.z)
-	--EntityService:SpawnEntity( "buildings/main/headquarters_lvl_7", Position.x , Position.y , Position.z , "")--err
 	
 	local missionDefName = CampaignService:GetCurrentMissionDefName()
 	local missionDef = ResourceManager:GetResource("MissionDef", missionDefName)
@@ -247,7 +244,27 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	local search_radius=tonumber(missionDefHelper.max_starting_distance) or 128
 	
 	local distribution_radius=f_distribution_radius()*2
-	
+	-----------------------------------------------
+	chack(Player,search_radius)
+	-----------------------------------------------	
+	mySpawnEntity(Player, search_radius,distribution_radius, "carbonium", "buildings/resources/carbonium_factory_lvl_3", 16,1)
+	mySpawnEntity(Player, search_radius,distribution_radius, "steel", "buildings/resources/steel_factory_lvl_3", 16,1)
+	mySpawnEntity(Player, search_radius,distribution_radius, "cobalt", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "palladium", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "uranium_ore", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "titanium", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "geothermal", "buildings/energy/geothermal_powerplant_lvl_3", 4,0) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "flammable_gas", "buildings/resources/gas_extractor_lvl_3", 4,0) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "mud", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "morphium", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "magma", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "sludge", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "water", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
+	--liquid_pump_lvl_3
+	-----------------------------------------------
+
+	--EntityService:SpawnEntity( "buildings/main/headquarters_lvl_7", Position.x , Position.y , Position.z , "")--err
+
 	local tEntity=nil
 	local spot=nil
 	local Component=nil
@@ -278,23 +295,7 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 		end
 	end
 	-----------------------------------------------	
-	chack(Player,search_radius)
-	-----------------------------------------------	
-	mySpawnEntity(Player, search_radius,distribution_radius, "carbonium", "buildings/resources/carbonium_factory_lvl_3", 16,1)
-	mySpawnEntity(Player, search_radius,distribution_radius, "steel", "buildings/resources/steel_factory_lvl_3", 16,1)
-	mySpawnEntity(Player, search_radius,distribution_radius, "cobalt", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "palladium", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "uranium_ore", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "titanium", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "geothermal", "buildings/energy/geothermal_powerplant_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "flammable_gas", "buildings/resources/gas_extractor_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "mud", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "morphium", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "magma", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "sludge", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "water", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	--liquid_pump_lvl_3
-	-----------------------------------------------
+
 	
 	--local Entities=nil
 	--local cnt=0

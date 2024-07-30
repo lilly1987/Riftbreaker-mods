@@ -48,10 +48,11 @@ end
 
 local RemoveFindEntitiesByGroup=function (t)
 
-	LogService:Log("RemoveFindEntitiesByGroup : " .. t )
+	--LogService:Log("RemoveFindEntitiesByGroup : " .. t )
 	local entities=FindService:FindEntitiesByGroup(t)
+	LogService:Log("RemoveFindEntitiesByGroup cnt : " .. tostring(#entities) )
 	for entity in Iter( entities ) do
-		LogService:Log("RemoveFindEntitiesByGroup : " .. tostring(entity) )
+		--LogService:Log("RemoveFindEntitiesByGroup : " .. tostring(entity) )
 		EntityService:SetName( entity, "logic/spawn_enemy" );
 		EntityService:SetGroup( entity, "" );
 	end
@@ -64,9 +65,8 @@ local SelectWaveSpawnPointsMy=function (t)
 	
         local entities = FindService:FindEntitiesByBlueprintInBox("logic/spawn_enemy", bounds.min, bounds.max );
         if Assert( #entities > 0, "Failed to find entities for: `" .. group1 .. "` in bounds:\nMin: " .. tostring(bounds.min.x) .. "," ..tostring(bounds.min.y) .."," ..tostring(bounds.min.z) .. "\nMax: " .. tostring(bounds.max.x) .. "," ..tostring(bounds.max.y) .."," ..tostring(bounds.max.z) ) then
-			
-			LogService:Log("SelectWaveSpawnPointsMy #entities: " .. tostring(#entities) )
-			LogService:Log("SelectWaveSpawnPointsMy group1: " .. group1 )
+
+			LogService:Log("SelectWaveSpawnPointsMy group1: " .. group1 .. " , " .. tostring(#entities)  )
 			
 			local position1={
 			x=(bounds.min.x+bounds.max.x)/2,
@@ -84,12 +84,12 @@ local SelectWaveSpawnPointsMy=function (t)
 			for entity1 in Iter( entities ) do
 			
 				local position = EntityService:GetPosition( entity1 ) 
-				LogService:Log("SelectWaveSpawnPointsMy entity1: " .. tostring(entity1) .. " ; x : " .. tostring(position.x) .. " ; z : " .. tostring(position.z)  )
+				--LogService:Log("SelectWaveSpawnPointsMy entity1: " .. tostring(entity1) .. " ; x : " .. tostring(position.x) .. " ; z : " .. tostring(position.z)  )
 
 				for group,bounds1 in pairs( groupBounds ) do
 				
 					local entity = EntityService:SpawnEntity( "logic/spawn_enemy",position.x,position.y,position.z,"" ) 
-					LogService:Log("SelectWaveSpawnPointsMy entity: " .. tostring(entity) )
+					--LogService:Log("SelectWaveSpawnPointsMy entity: " .. tostring(entity) )
 					
 					EntityService:SetName( entity, group .. "/" .. tostring(entity) );
 					EntityService:SetGroup( entity, group );
@@ -109,15 +109,13 @@ end
 local database = PlayerService:GetOrCreateGlobalDatabase( "wave_spawn_points_edit_-_olny_top_line_autoexec.lua")
 
 -- 스크립트 종료시마다
-RegisterGlobalEventHandler("LuaGlobalEvent", function(evt)
-	local text=evt:GetEvent()
-	if text ~="change_world_bounds" then
-		return
-	end
-	LogService:Log("LuaGlobalEvent : ".. text)
-	
-	
-end)
+--RegisterGlobalEventHandler("LuaGlobalEvent", function(evt)
+--	local text=evt:GetEvent()
+--	if text ~="change_world_bounds" then
+--		return
+--	end
+--	LogService:Log("LuaGlobalEvent : ".. text)	
+--end)
 
 local positionFixEntity=function (Entity)
 	local position = EntityService:GetPosition(Entity)
