@@ -105,6 +105,33 @@ RegisterGlobalEventHandler("PlayerInitializedEvent", function(evt)
 "items/weapons/auto_semi_auto_extreme_item"        ,
 	}	
 	
+	local items3 = {
+	"items/skills/dash_acid_extreme_item"
+	,"items/skills/jump_acid_extreme_item"
+	,"items/skills/damage_trail_cryo_extreme_item"
+	,"items/skills/jump_splash_extreme_item"
+	,"items/skills/damage_trail_acid_extreme_item"
+	,"items/skills/antimatter_ball_extreme_item"
+	,"items/skills/damage_trail_fire_extreme_item"
+	,"items/skills/damage_trail_energy_extreme_item"
+	,"items/skills/emergency_explosion_extreme_item"
+	,"items/skills/dash_energy_extreme_item"
+	,"items/skills/dash_fire_extreme_item"
+	,"items/skills/jump_fire_extreme_item"
+	,"items/skills/dash_cryo_extreme_item"
+    ,"items/skills/freeze_ray_extreme_item"
+	,"items/skills/flamewave_extreme_item"
+	,"items/skills/generator_overcharge_extreme_item"
+	,"items/skills/jump_energy_extreme_item"
+	,"items/skills/jump_cryo_extreme_item"
+	,"items/skills/radar_pulse_extreme_item"
+    ,"items/skills/shield_extreme_item"
+	,"items/skills/orbital_laser_extreme_item"
+	,"items/skills/tornado_extreme_item"
+	,"items/skills/orbital_bombardment_extreme_item"
+	,"items/skills/tornado_acid_extreme_item"
+	}	
+	
 	local items2 = {
 		"items/loot/weapon_mods/mod_ammo_cost_extreme_item",
 		"items/loot/weapon_mods/mod_ammo_spread_add_extreme_item",
@@ -131,6 +158,10 @@ RegisterGlobalEventHandler("PlayerInitializedEvent", function(evt)
 	--for player_id in Iter(players) do
 		--LogService:Log(" player_id : " .. tostring(player_id))
 
+		for _, item in ipairs(items3) do			
+			PlayerService:AddItemToInventory(player_id, item)
+		end
+		
 		for _, item in ipairs(items) do			
 			PlayerService:AddItemToInventory(player_id, item)
 			PlayerService:AddItemToInventory(player_id, item)
