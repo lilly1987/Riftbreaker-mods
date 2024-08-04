@@ -11,7 +11,7 @@ local ResourceStorageDescSetup=function ()
     end
 	
 	local name1="player/player"
-	local k="player_storages_x100-1000_autoexec.lua/" .. name1
+	local k="player_storages_x1000_autoexec.lua/" .. name1
 	if database:HasFloat( k) then
 		LogService:Log(" database has : " .. k)
 		return
@@ -46,9 +46,9 @@ local ResourceStorageDescSetup=function ()
 	local a=nil
 	local item=nil
 	local m=0
-	LogService:Log( " cnt : " .. Container:GetItemCount() )		
+	--LogService:Log( " cnt : " .. Container:GetItemCount() )		
     for i=Container:GetItemCount()-1,0,-1 do
-		LogService:Log(" item : " .. tostring(i))
+		--LogService:Log(" item : " .. tostring(i))
         item = Container:GetItem(i)
 		if ( item == nil ) then	
 			LogService:Log(" item nil : " .. tostring(i))

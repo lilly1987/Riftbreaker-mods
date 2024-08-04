@@ -1,18 +1,18 @@
 WorkspaceManifest
 {
-	description "aHA9KDUwMDAtaHApLzEwK2hwKjUKCm5vIGNoYW5nZSBsdWEKdXNlIGF1dG9leGVjLmx1YQ=="
+	description "aHAyPW1hdGguZmxvb3IoKDUwMDAtaHApLzEwK2hwKjUpCgpubyBjaGFuZ2UgbHVhCnVzZSBhdXRvZXhlYy5sdWE="
 	tags
 	{
 		String "Creatures"
 	}
 
 	modified_game_files
-	title "RW5lbXkgVW5pdCBIUCBVcCBieSBMaWxseQ=="
+	title "RW5lbXkgVW5pdCBIUCBVcCB2MQ=="
 	homepage
 	modio_published_file "4142216"
 	visibility "0"
 	game_version "EXE: 978 DATA: 573"
-	version "1.0.4"
+	version "1.0.5"
 	localizations
 	author
 	steam_published_file "3282961434"
