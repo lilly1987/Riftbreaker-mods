@@ -1,6 +1,6 @@
 WorkspaceManifest
 {
-	description
+	description "dXNlIGF1dG9leGVjLmx1YQoKY3JlYXQgY2F2ZV93aW5kX3Nwb3RfbGlsbHkuZW50"
 	tags
 	{
 		String "Buildings"
@@ -14,7 +14,7 @@ WorkspaceManifest
 	modio_published_file "4165740"
 	visibility "0"
 	game_version "EXE: 978 DATA: 573"
-	version "1.2.0"
+	version "1.2.1"
 	localizations
 	author
 	steam_published_file "3289030996"

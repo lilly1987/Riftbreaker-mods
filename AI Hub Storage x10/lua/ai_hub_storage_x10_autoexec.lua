@@ -13,7 +13,7 @@ local ResourceStorageDescSetup=function (name1,t ,multi )
         LogService:Log("NOT EXISTS database : " .. my)
         return
     end
-	local k="ai_hub_storage_x100_by_lilly_autoexec.lua/" .. name1
+	local k="ai_hub_storage_x10_by_lilly_autoexec.lua/" .. name1
 	if database:HasFloat( k) then
 		LogService:Log(" Already has : " .. name1)
 		return

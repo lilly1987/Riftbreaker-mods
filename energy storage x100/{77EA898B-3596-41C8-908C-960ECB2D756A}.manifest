@@ -1,18 +1,18 @@
 WorkspaceManifest
 {
-	description "ZW5lcmd5IHN0b3JhZ2UgeDEwMAo="
+	description "ZW5lcmd5IHN0b3JhZ2UgeDEwMAoKdXNlIGF1dG9leGVjLmx1YQ=="
 	tags
 	{
 		String "Buildings"
 	}
 
 	modified_game_files
-	title "ZW5lcmd5IHN0b3JhZ2UgeDEwMCBieSBMaWxseQ=="
+	title "ZW5lcmd5IHN0b3JhZ2UgeDEwMA=="
 	homepage
 	modio_published_file "4142268"
 	visibility "0"
 	game_version "EXE: 978 DATA: 573"
-	version "1.1.0"
+	version "1.1.2"
 	localizations
 	author
 	steam_published_file "3282965885"
