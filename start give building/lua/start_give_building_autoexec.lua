@@ -1,3 +1,4 @@
+local is_magma=false
 local defenses={
 "buildings/defense/tower_flamer_lvl_3"   ,
 "buildings/defense/tower_laser_lvl_3"        ,
@@ -142,7 +143,7 @@ local energy_connector=function(tEntity,distribution_radius)
 	end
 end
 
-local mySpawnEntity=function(Player, search_radius,distribution_radius, resources, make, cnt1,cnt2)
+local mySpawnEntity=function(Player, search_radius,distribution_radius, resources, make, cnt1,cnt2,cryo_station)
 	local Entities = FindService:FindEntitiesByPredicateInRadius( Player, search_radius, {
 		type="",
 		signature="ResourceComponent,GridMarkerComponent",		
@@ -172,6 +173,7 @@ local mySpawnEntity=function(Player, search_radius,distribution_radius, resource
 			energy(Position,cnt2)
 			energy_connector(tEntity,distribution_radius)
 			defenseSpawn(Position,resources)
+			cryo_station(Position)
 			table.remove(Entities, n)
 		else
 			return
@@ -207,6 +209,13 @@ local chack=function(Player, search_radius)
 	});
 end
 
+local cryo_station_on=function(Position)
+	return EntityService:SpawnEntity( "buildings/main/cryo_station", Position.x , Position.y , Position.z , "")
+end
+local cryo_station_off=function(Position)
+end
+local cryo_station=cryo_station_off
+
 RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	
 	-----------------------------------------------
@@ -216,13 +225,13 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	-----------------------------------------------
 	LogService:Log("PlayerControlledEntityChangeEvent")
 	if CampaignService:GetCurrentCampaignType()=="story" then
-		LogService:Log("GetCurrentCampaignType : story")
+		LogService:Log(" GetCurrentCampaignType : story")
 		return
 	end
 	-----------------------------------------------
 	local database = CampaignService:GetCampaignData()
     if ( database == nil ) then
-        LogService:Log("database no")
+        LogService:Log(" database no")
         return
     end
 	local k1="start_give_building_autoexec.lua/" 
@@ -233,6 +242,15 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 		database:SetInt( k1,1)
 		LogService:Log(" database set " )
 	end	
+	-----------------------------------------------
+	if MissionService:GetCurrentBiomeName()=="magma" then
+		LogService:Log(" GetCurrentBiomeName : magma")
+		is_magma=true
+		cryo_station=cryo_station_on
+	else
+		is_magma=false
+		cryo_station=cryo_station_off
+	end
 	-----------------------------------------------
 	--local Entity=MissionService:GetPlayerSpawnPoint()--err
 	local Player=MapGenerator:GetInitialSpawnPoint()
@@ -247,19 +265,20 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	-----------------------------------------------
 	chack(Player,search_radius)
 	-----------------------------------------------	
-	mySpawnEntity(Player, search_radius,distribution_radius, "carbonium", "buildings/resources/carbonium_factory_lvl_3", 16,1)
-	mySpawnEntity(Player, search_radius,distribution_radius, "steel", "buildings/resources/steel_factory_lvl_3", 16,1)
-	mySpawnEntity(Player, search_radius,distribution_radius, "cobalt", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "palladium", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "uranium_ore", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "titanium", "buildings/resources/rare_element_mine_lvl_3", 4,3) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "geothermal", "buildings/energy/geothermal_powerplant_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "flammable_gas", "buildings/resources/gas_extractor_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "mud", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "morphium", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "magma", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "sludge", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
-	mySpawnEntity(Player, search_radius,distribution_radius, "water", "buildings/resources/liquid_pump_lvl_3", 4,0) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "carbonium", "buildings/resources/carbonium_factory_lvl_3", 16,1,cryo_station)
+	mySpawnEntity(Player, search_radius,distribution_radius, "steel", "buildings/resources/steel_factory_lvl_3", 16,1,cryo_station)
+	mySpawnEntity(Player, search_radius,distribution_radius, "cobalt", "buildings/resources/rare_element_mine_lvl_3", 4,3,cryo_station) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "palladium", "buildings/resources/rare_element_mine_lvl_3", 4,3,cryo_station) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "uranium_ore", "buildings/resources/rare_element_mine_lvl_3", 4,3,cryo_station) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "titanium", "buildings/resources/rare_element_mine_lvl_3", 4,3,cryo_station) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "geothermal", "buildings/energy/geothermal_powerplant_lvl_3", 4,0,cryo_station) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "flammable_gas", "buildings/resources/gas_extractor_lvl_3", 4,0,cryo_station) --200,80,48
+	-----------------------------------------------
+	mySpawnEntity(Player, search_radius,distribution_radius, "mud", "buildings/resources/liquid_pump_lvl_3", 4,0,cryo_station_off) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "morphium", "buildings/resources/liquid_pump_lvl_3", 4,0,cryo_station_off) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "magma", "buildings/resources/liquid_pump_lvl_3", 4,0,cryo_station_off) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "sludge", "buildings/resources/liquid_pump_lvl_3", 4,0,cryo_station_off) --200,80,48
+	mySpawnEntity(Player, search_radius,distribution_radius, "water", "buildings/resources/liquid_pump_lvl_3", 4,0,cryo_station_off) --200,80,48
 	--liquid_pump_lvl_3
 	-----------------------------------------------
 
@@ -276,15 +295,17 @@ RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 		--local Blueprint = ResourceManager:GetBlueprint( item[1] )
 		--local Component = Blueprint:GetComponent("BuildingDesc")		
 		
-		Component = EntityService:GetBlueprintComponent(item[1], "BuildingDesc")
-		bp=Component:GetField( "bp" ):GetValue()
+		--Component = EntityService:GetBlueprintComponent(item[1], "BuildingDesc")
+		--bp=Component:GetField( "bp" ):GetValue()
 		--LogService:Log(" bp : " .. bp)
+		
 		for i=1,item[2] do 
 			spot=FindService:FindEmptySpotInRadius(Player,  search_radius,"","")
 			--spot=FindService:FindEmptySpotForBuildingRadius(Player,  search_radius,bp,"","")
 			if spot.first then
 				Position=spot.second
-				--LogService:Log(" Position : x : " .. Position.x .. " , y : " .. Position.y .. " , z : " .. Position.z)			
+				--LogService:Log(" Position : x : " .. Position.x .. " , y : " .. Position.y .. " , z : " .. Position.z)		
+				cryo_station(Position)
 				tEntity=EntityService:SpawnEntity( item[1], Position.x , Position.y , Position.z , "")
 				energy(Position,item[3])
 				energy_connector(tEntity,distribution_radius)

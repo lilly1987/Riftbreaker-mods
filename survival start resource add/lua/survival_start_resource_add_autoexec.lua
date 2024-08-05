@@ -1,3 +1,4 @@
+
 RegisterGlobalEventHandler("PlayerControlledEntityChangeEvent", function(evt)
 	LogService:Log("Event" )
 	local player_id = evt:GetPlayerId()
