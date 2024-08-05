@@ -12,6 +12,24 @@ MissionDef
 	biomes          	"swamp"
 	source_tiles
     {
+		biomes/swamp/tiles/swamp_custom_liquid_great_tree_01_lilly/swamp_custom_liquid_great_tree_01_lilly.tile
+		biomes/swamp/tiles/swamp_custom_liquid_island_large_01_lilly/swamp_custom_liquid_island_large_01_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_01_lilly/swamp_liquid_01_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_02_lilly/swamp_liquid_02_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_03_lilly/swamp_liquid_03_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_04_lilly/swamp_liquid_04_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_05_lilly/swamp_liquid_05_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_forest_01_lilly/swamp_liquid_forest_01_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_forest_02_lilly/swamp_liquid_forest_02_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_forest_03_lilly/swamp_liquid_forest_03_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_island_01_lilly/swamp_liquid_island_01_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_island_02_lilly/swamp_liquid_island_02_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_island_03_lilly/swamp_liquid_island_03_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_island_04_lilly/swamp_liquid_island_04_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_island_small_05_lilly/swamp_liquid_island_small_05_lilly.tile
+		biomes/swamp/tiles/swamp_liquid_lilly_01/swamp_liquid_lilly_01.tile
+		biomes/swamp/tiles/swamp_liquid_lilly_02/swamp_liquid_lilly_02.tile
+
         biomes/swamp/tiles/swamp_liquid_01/swamp_liquid_01.tile        
         biomes/swamp/tiles/swamp_liquid_02/swamp_liquid_02.tile        
         biomes/swamp/tiles/swamp_liquid_03/swamp_liquid_03.tile        
@@ -31,11 +49,97 @@ MissionDef
 	
 	tile_spawn_rules
 	{		
+		biomes/swamp/tiles/swamp_custom_liquid_great_tree_01_lilly/swamp_custom_liquid_great_tree_01_lilly.tile    
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_custom_liquid_island_large_01_lilly/swamp_custom_liquid_island_large_01_lilly.tile
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_01_lilly/swamp_liquid_01_lilly.tile                                        
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_02_lilly/swamp_liquid_02_lilly.tile                                        
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_03_lilly/swamp_liquid_03_lilly.tile                                        
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_04_lilly/swamp_liquid_04_lilly.tile                                        
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_05_lilly/swamp_liquid_05_lilly.tile                                        
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_forest_01_lilly/swamp_liquid_forest_01_lilly.tile                          
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_forest_02_lilly/swamp_liquid_forest_02_lilly.tile                          
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_forest_03_lilly/swamp_liquid_forest_03_lilly.tile                          
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_island_01_lilly/swamp_liquid_island_01_lilly.tile                          
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_island_02_lilly/swamp_liquid_island_02_lilly.tile                          
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_island_03_lilly/swamp_liquid_island_03_lilly.tile                          
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_island_04_lilly/swamp_liquid_island_04_lilly.tile                          
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_island_small_05_lilly/swamp_liquid_island_small_05_lilly.tile              
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_lilly_01/swamp_liquid_lilly_01.tile                                        
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+		biomes/swamp/tiles/swamp_liquid_lilly_02/swamp_liquid_lilly_02.tile                                        
+		{			
+			min_instances	1	
+			random_weight	2.0
+		}		
+	
 		// LARGE 2x1 TILES ARE SPAWNED FIRST
 		// 2 LARGE TILES ARE GUARANTEED AT THE CENTER
 		biomes/swamp/tiles/swamp_liquid_island_02/swamp_liquid_island_02.tile
 		{			
-			min_instances	1	
+			//min_instances	1	
 			max_instances	1	
 			tile_coord
 			{	
@@ -60,7 +164,7 @@ MissionDef
 		}				
 		biomes/swamp/tiles/swamp_liquid_island_04/swamp_liquid_island_04.tile
 		{			
-			min_instances	1	
+			//min_instances	1	
 			max_instances	1
 			tile_coord
 			{	
