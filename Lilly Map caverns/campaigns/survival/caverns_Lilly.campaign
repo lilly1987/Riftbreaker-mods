@@ -10,7 +10,7 @@ CampaignDef
 	rich_presence				 "rich_presence_3"
 	achievements_group			 "survival"
 	
-	order                        "-1"
+	order                        "-5"
 	disabled_pause_screens	 	 "planetary_scanner"
 	
 }

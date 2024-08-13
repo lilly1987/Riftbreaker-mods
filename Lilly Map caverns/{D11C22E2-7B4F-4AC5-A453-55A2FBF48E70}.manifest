@@ -13,7 +13,7 @@ WorkspaceManifest
 	modio_published_file "4165322"
 	visibility "0"
 	game_version "EXE: 978 DATA: 573"
-	version "2.3.0"
+	version "2.4.0"
 	localizations
 	author
 	steam_published_file "3288887188"
