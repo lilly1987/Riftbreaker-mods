@@ -1,11 +1,24 @@
-.git
+AI Hub Storage x10
 AI Hub Storage x100
 Building Health x 100
+Wave Spawn Points Edit - Olny TOP Line
 Wave Spawn Points Edit - TOP Center
+cave_wind_spot radius x2
+cryo station radius
 detector discover Distance x 10
 enemy unit hp up
+enemy unit hp up 2
+energy connector radius 10
+energy storage x10
 energy storage x100
+half radius pump
+mech base stats up
 player Storages x10
 player Storages x100
+player Storages x1000
+solid material storage x10
 solid material storage x100
 start give building
+super railgun
+survival start resource add
+wall_gate_crystal

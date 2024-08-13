@@ -173,6 +173,11 @@ MissionDef
 	
 	tile_spawn_rules
 	{		
+		biomes/caverns/tiles/Lilly_Tile_12/Lilly_Tile_12.tile
+		{
+			//random_weight	3.0
+			min_instances	1
+		}
 		biomes/caverns/tiles/Lilly_Tile_01/Lilly_Tile_01.tile
 		{
 			//random_weight	3.0

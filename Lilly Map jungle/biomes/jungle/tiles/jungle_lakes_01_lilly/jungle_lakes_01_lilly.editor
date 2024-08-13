@@ -1,0 +1,6 @@
+set scene/entity/2011/visible_mask "2"
+set scene/entity/2012/visible_mask "2"
+set scene/entity/2013/visible_mask "2"
+set scene/entity/2014/visible_mask "2"
+set scene/entity/2015/visible_mask "2"
+set scene/entity/2016/visible_mask "2"

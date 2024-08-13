@@ -2812,7 +2812,6 @@ EntityTemplate
 			position
 			{
 				x "-49.034"
-				y "0.000"
 				z "175.494"
 			}
 
@@ -2862,7 +2861,6 @@ EntityTemplate
 			position
 			{
 				x "-49.730"
-				y "0.000"
 				z "142.638"
 			}
 
@@ -2912,7 +2910,6 @@ EntityTemplate
 			position
 			{
 				x "-17.221"
-				y "0.000"
 				z "143.200"
 			}
 
@@ -2962,7 +2959,6 @@ EntityTemplate
 			position
 			{
 				x "-18.720"
-				y "0.000"
 				z "175.513"
 			}
 
@@ -3012,7 +3008,6 @@ EntityTemplate
 			position
 			{
 				x "-30.490"
-				y "0.000"
 				z "159.524"
 			}
 
@@ -3055,7 +3050,6 @@ EntityTemplate
 			position
 			{
 				x "-48.177"
-				y "0.000"
 				z "175.153"
 			}
 
@@ -3098,7 +3092,6 @@ EntityTemplate
 			position
 			{
 				x "-16.177"
-				y "0.000"
 				z "175.153"
 			}
 
@@ -3141,7 +3134,6 @@ EntityTemplate
 			position
 			{
 				x "-16.177"
-				y "0.000"
 				z "143.153"
 			}
 
@@ -3184,7 +3176,6 @@ EntityTemplate
 			position
 			{
 				x "-48.177"
-				y "0.000"
 				z "143.153"
 			}
 
@@ -3227,7 +3218,6 @@ EntityTemplate
 			position
 			{
 				x "-45.226"
-				y "0.000"
 				z "143.605"
 			}
 
@@ -3276,7 +3266,6 @@ EntityTemplate
 			position
 			{
 				x "-46.340"
-				y "0.000"
 				z "176.172"
 			}
 
@@ -3325,7 +3314,6 @@ EntityTemplate
 			position
 			{
 				x "-15.370"
-				y "0.000"
 				z "175.346"
 			}
 
@@ -3374,7 +3362,6 @@ EntityTemplate
 			position
 			{
 				x "-14.925"
-				y "0.000"
 				z "144.343"
 			}
 
@@ -3423,7 +3410,6 @@ EntityTemplate
 			position
 			{
 				x "17.253"
-				y "0.000"
 				z "145.905"
 			}
 
@@ -3473,7 +3459,6 @@ EntityTemplate
 			position
 			{
 				x "15.861"
-				y "0.000"
 				z "176.453"
 			}
 
@@ -3523,7 +3508,6 @@ EntityTemplate
 			position
 			{
 				x "15.165"
-				y "0.000"
 				z "143.597"
 			}
 
@@ -3573,7 +3557,6 @@ EntityTemplate
 			position
 			{
 				x "47.674"
-				y "0.000"
 				z "144.159"
 			}
 
@@ -3623,7 +3606,6 @@ EntityTemplate
 			position
 			{
 				x "46.175"
-				y "0.000"
 				z "176.472"
 			}
 
@@ -3673,7 +3655,6 @@ EntityTemplate
 			position
 			{
 				x "32.873"
-				y "0.000"
 				z "159.088"
 			}
 
@@ -3716,7 +3697,6 @@ EntityTemplate
 			position
 			{
 				x "15.633"
-				y "0.000"
 				z "177.707"
 			}
 
@@ -3759,7 +3739,6 @@ EntityTemplate
 			position
 			{
 				x "47.633"
-				y "0.000"
 				z "177.707"
 			}
 
@@ -3802,7 +3781,6 @@ EntityTemplate
 			position
 			{
 				x "47.633"
-				y "0.000"
 				z "145.707"
 			}
 
@@ -3845,7 +3823,6 @@ EntityTemplate
 			position
 			{
 				x "15.633"
-				y "0.000"
 				z "145.707"
 			}
 
@@ -3888,7 +3865,6 @@ EntityTemplate
 			position
 			{
 				x "-45.610"
-				y "0.000"
 				z "79.077"
 			}
 
@@ -3937,7 +3913,6 @@ EntityTemplate
 			position
 			{
 				x "-14.069"
-				y "0.000"
 				z "79.082"
 			}
 
@@ -3986,7 +3961,6 @@ EntityTemplate
 			position
 			{
 				x "-13.287"
-				y "0.000"
 				z "111.719"
 			}
 
@@ -4035,7 +4009,6 @@ EntityTemplate
 			position
 			{
 				x "-45.828"
-				y "0.000"
 				z "111.790"
 			}
 
@@ -4084,7 +4057,6 @@ EntityTemplate
 			position
 			{
 				x "16.595"
-				y "0.000"
 				z "142.491"
 			}
 
@@ -4133,7 +4105,6 @@ EntityTemplate
 			position
 			{
 				x "16.177"
-				y "0.000"
 				z "174.994"
 			}
 
@@ -4182,7 +4153,6 @@ EntityTemplate
 			position
 			{
 				x "49.275"
-				y "0.000"
 				z "175.351"
 			}
 
@@ -4231,7 +4201,6 @@ EntityTemplate
 			position
 			{
 				x "50.046"
-				y "0.000"
 				z "143.209"
 			}
 
@@ -4280,7 +4249,6 @@ EntityTemplate
 			position
 			{
 				x "-45.972"
-				y "0.000"
 				z "111.149"
 			}
 
@@ -4330,7 +4298,6 @@ EntityTemplate
 			position
 			{
 				x "-46.668"
-				y "0.000"
 				z "78.293"
 			}
 
@@ -4380,7 +4347,6 @@ EntityTemplate
 			position
 			{
 				x "-14.159"
-				y "0.000"
 				z "78.855"
 			}
 
@@ -4430,7 +4396,6 @@ EntityTemplate
 			position
 			{
 				x "-15.658"
-				y "0.000"
 				z "111.168"
 			}
 
@@ -4480,7 +4445,6 @@ EntityTemplate
 			position
 			{
 				x "-30.344"
-				y "0.000"
 				z "96.088"
 			}
 
@@ -4523,7 +4487,6 @@ EntityTemplate
 			position
 			{
 				x "-50.123"
-				y "0.000"
 				z "110.489"
 			}
 
@@ -4566,7 +4529,6 @@ EntityTemplate
 			position
 			{
 				x "-18.123"
-				y "0.000"
 				z "110.489"
 			}
 
@@ -4609,7 +4571,6 @@ EntityTemplate
 			position
 			{
 				x "-18.123"
-				y "0.000"
 				z "78.489"
 			}
 
@@ -4652,7 +4613,6 @@ EntityTemplate
 			position
 			{
 				x "-50.123"
-				y "0.000"
 				z "78.489"
 			}
 
@@ -4695,7 +4655,6 @@ EntityTemplate
 			position
 			{
 				x "17.883"
-				y "0.000"
 				z "111.854"
 			}
 
@@ -4744,7 +4703,6 @@ EntityTemplate
 			position
 			{
 				x "16.959"
-				y "0.000"
 				z "79.785"
 			}
 
@@ -4793,7 +4751,6 @@ EntityTemplate
 			position
 			{
 				x "49.664"
-				y "0.000"
 				z "111.579"
 			}
 
@@ -4842,7 +4799,6 @@ EntityTemplate
 			position
 			{
 				x "49.710"
-				y "0.000"
 				z "79.304"
 			}
 
@@ -4891,7 +4847,6 @@ EntityTemplate
 			position
 			{
 				x "-17.453"
-				y "0.000"
 				z "127.941"
 			}
 
@@ -4941,7 +4896,6 @@ EntityTemplate
 			position
 			{
 				x "2.123"
-				y "0.000"
 				z "127.666"
 			}
 
@@ -4984,7 +4938,6 @@ EntityTemplate
 			position
 			{
 				x "34.123"
-				y "0.000"
 				z "95.666"
 			}
 
@@ -5027,7 +4980,6 @@ EntityTemplate
 			position
 			{
 				x "17.031"
-				y "0.000"
 				z "109.605"
 			}
 
@@ -5077,7 +5029,6 @@ EntityTemplate
 			position
 			{
 				x "17.614"
-				y "0.000"
 				z "79.104"
 			}
 
@@ -5127,7 +5078,6 @@ EntityTemplate
 			position
 			{
 				x "18.310"
-				y "0.000"
 				z "111.960"
 			}
 
@@ -5177,7 +5127,6 @@ EntityTemplate
 			position
 			{
 				x "48.624"
-				y "0.000"
 				z "111.979"
 			}
 
@@ -5227,7 +5176,6 @@ EntityTemplate
 			position
 			{
 				x "50.123"
-				y "0.000"
 				z "79.666"
 			}
 
@@ -5277,7 +5225,6 @@ EntityTemplate
 			position
 			{
 				x "34.892"
-				y "0.000"
 				z "95.330"
 			}
 
@@ -5320,7 +5267,6 @@ EntityTemplate
 			position
 			{
 				x "18.123"
-				y "0.000"
 				z "79.666"
 			}
 
@@ -5363,7 +5309,6 @@ EntityTemplate
 			position
 			{
 				x "18.123"
-				y "0.000"
 				z "111.666"
 			}
 
@@ -5406,7 +5351,6 @@ EntityTemplate
 			position
 			{
 				x "50.123"
-				y "0.000"
 				z "111.666"
 			}
 
@@ -5449,7 +5393,6 @@ EntityTemplate
 			position
 			{
 				x "50.123"
-				y "0.000"
 				z "79.666"
 			}
 
@@ -5492,7 +5435,6 @@ EntityTemplate
 			position
 			{
 				x "-49.034"
-				y "0.000"
 				z "-80.506"
 			}
 
@@ -5542,7 +5484,6 @@ EntityTemplate
 			position
 			{
 				x "-49.730"
-				y "0.000"
 				z "-113.362"
 			}
 
@@ -5592,7 +5533,6 @@ EntityTemplate
 			position
 			{
 				x "-17.221"
-				y "0.000"
 				z "-112.800"
 			}
 
@@ -5642,7 +5582,6 @@ EntityTemplate
 			position
 			{
 				x "-18.720"
-				y "0.000"
 				z "-80.487"
 			}
 
@@ -5692,7 +5631,6 @@ EntityTemplate
 			position
 			{
 				x "-30.490"
-				y "0.000"
 				z "-96.476"
 			}
 
@@ -5735,7 +5673,6 @@ EntityTemplate
 			position
 			{
 				x "-48.177"
-				y "0.000"
 				z "-80.847"
 			}
 
@@ -5778,7 +5715,6 @@ EntityTemplate
 			position
 			{
 				x "-16.177"
-				y "0.000"
 				z "-80.847"
 			}
 
@@ -5821,7 +5757,6 @@ EntityTemplate
 			position
 			{
 				x "-16.177"
-				y "0.000"
 				z "-112.847"
 			}
 
@@ -5864,7 +5799,6 @@ EntityTemplate
 			position
 			{
 				x "-48.177"
-				y "0.000"
 				z "-112.847"
 			}
 
@@ -5907,7 +5841,6 @@ EntityTemplate
 			position
 			{
 				x "-45.226"
-				y "0.000"
 				z "-112.395"
 			}
 
@@ -5956,7 +5889,6 @@ EntityTemplate
 			position
 			{
 				x "-46.340"
-				y "0.000"
 				z "-79.828"
 			}
 
@@ -6005,7 +5937,6 @@ EntityTemplate
 			position
 			{
 				x "-15.370"
-				y "0.000"
 				z "-80.654"
 			}
 
@@ -6054,7 +5985,6 @@ EntityTemplate
 			position
 			{
 				x "-14.925"
-				y "0.000"
 				z "-111.657"
 			}
 
@@ -6103,7 +6033,6 @@ EntityTemplate
 			position
 			{
 				x "17.253"
-				y "0.000"
 				z "-110.095"
 			}
 
@@ -6153,7 +6082,6 @@ EntityTemplate
 			position
 			{
 				x "15.861"
-				y "0.000"
 				z "-79.547"
 			}
 
@@ -6203,7 +6131,6 @@ EntityTemplate
 			position
 			{
 				x "15.165"
-				y "0.000"
 				z "-112.403"
 			}
 
@@ -6253,7 +6180,6 @@ EntityTemplate
 			position
 			{
 				x "47.674"
-				y "0.000"
 				z "-111.841"
 			}
 
@@ -6303,7 +6229,6 @@ EntityTemplate
 			position
 			{
 				x "46.175"
-				y "0.000"
 				z "-79.528"
 			}
 
@@ -6353,7 +6278,6 @@ EntityTemplate
 			position
 			{
 				x "32.873"
-				y "0.000"
 				z "-96.912"
 			}
 
@@ -6396,7 +6320,6 @@ EntityTemplate
 			position
 			{
 				x "15.633"
-				y "0.000"
 				z "-78.293"
 			}
 
@@ -6439,7 +6362,6 @@ EntityTemplate
 			position
 			{
 				x "47.633"
-				y "0.000"
 				z "-78.293"
 			}
 
@@ -6482,7 +6404,6 @@ EntityTemplate
 			position
 			{
 				x "47.633"
-				y "0.000"
 				z "-110.293"
 			}
 
@@ -6525,7 +6446,6 @@ EntityTemplate
 			position
 			{
 				x "15.633"
-				y "0.000"
 				z "-110.293"
 			}
 
@@ -6568,7 +6488,6 @@ EntityTemplate
 			position
 			{
 				x "-45.610"
-				y "0.000"
 				z "-176.923"
 			}
 
@@ -6617,7 +6536,6 @@ EntityTemplate
 			position
 			{
 				x "-14.069"
-				y "0.000"
 				z "-176.918"
 			}
 
@@ -6666,7 +6584,6 @@ EntityTemplate
 			position
 			{
 				x "-13.287"
-				y "0.000"
 				z "-144.281"
 			}
 
@@ -6715,7 +6632,6 @@ EntityTemplate
 			position
 			{
 				x "-45.828"
-				y "0.000"
 				z "-144.210"
 			}
 
@@ -6764,7 +6680,6 @@ EntityTemplate
 			position
 			{
 				x "16.595"
-				y "0.000"
 				z "-113.509"
 			}
 
@@ -6813,7 +6728,6 @@ EntityTemplate
 			position
 			{
 				x "16.177"
-				y "0.000"
 				z "-81.006"
 			}
 
@@ -6862,7 +6776,6 @@ EntityTemplate
 			position
 			{
 				x "49.275"
-				y "0.000"
 				z "-80.649"
 			}
 
@@ -6911,7 +6824,6 @@ EntityTemplate
 			position
 			{
 				x "50.046"
-				y "0.000"
 				z "-112.791"
 			}
 
@@ -6960,7 +6872,6 @@ EntityTemplate
 			position
 			{
 				x "-45.972"
-				y "0.000"
 				z "-144.851"
 			}
 
@@ -7010,7 +6921,6 @@ EntityTemplate
 			position
 			{
 				x "-46.668"
-				y "0.000"
 				z "-177.707"
 			}
 
@@ -7060,7 +6970,6 @@ EntityTemplate
 			position
 			{
 				x "-14.159"
-				y "0.000"
 				z "-177.145"
 			}
 
@@ -7110,7 +7019,6 @@ EntityTemplate
 			position
 			{
 				x "-15.658"
-				y "0.000"
 				z "-144.832"
 			}
 
@@ -7160,7 +7068,6 @@ EntityTemplate
 			position
 			{
 				x "-30.344"
-				y "0.000"
 				z "-159.912"
 			}
 
@@ -7203,7 +7110,6 @@ EntityTemplate
 			position
 			{
 				x "-50.123"
-				y "0.000"
 				z "-145.511"
 			}
 
@@ -7246,7 +7152,6 @@ EntityTemplate
 			position
 			{
 				x "-18.123"
-				y "0.000"
 				z "-145.511"
 			}
 
@@ -7289,7 +7194,6 @@ EntityTemplate
 			position
 			{
 				x "-18.123"
-				y "0.000"
 				z "-177.511"
 			}
 
@@ -7332,7 +7236,6 @@ EntityTemplate
 			position
 			{
 				x "-50.123"
-				y "0.000"
 				z "-177.511"
 			}
 
@@ -7375,7 +7278,6 @@ EntityTemplate
 			position
 			{
 				x "17.883"
-				y "0.000"
 				z "-144.146"
 			}
 
@@ -7424,7 +7326,6 @@ EntityTemplate
 			position
 			{
 				x "16.959"
-				y "0.000"
 				z "-176.215"
 			}
 
@@ -7473,7 +7374,6 @@ EntityTemplate
 			position
 			{
 				x "49.664"
-				y "0.000"
 				z "-144.421"
 			}
 
@@ -7522,7 +7422,6 @@ EntityTemplate
 			position
 			{
 				x "49.710"
-				y "0.000"
 				z "-176.696"
 			}
 
@@ -7571,7 +7470,6 @@ EntityTemplate
 			position
 			{
 				x "-17.453"
-				y "0.000"
 				z "-128.059"
 			}
 
@@ -7621,7 +7519,6 @@ EntityTemplate
 			position
 			{
 				x "2.123"
-				y "0.000"
 				z "-128.334"
 			}
 
@@ -7664,7 +7561,6 @@ EntityTemplate
 			position
 			{
 				x "34.123"
-				y "0.000"
 				z "-160.334"
 			}
 
@@ -7707,7 +7603,6 @@ EntityTemplate
 			position
 			{
 				x "17.031"
-				y "0.000"
 				z "-146.395"
 			}
 
@@ -7757,7 +7652,6 @@ EntityTemplate
 			position
 			{
 				x "17.614"
-				y "0.000"
 				z "-176.896"
 			}
 
@@ -7807,7 +7701,6 @@ EntityTemplate
 			position
 			{
 				x "18.310"
-				y "0.000"
 				z "-144.040"
 			}
 
@@ -7857,7 +7750,6 @@ EntityTemplate
 			position
 			{
 				x "48.624"
-				y "0.000"
 				z "-144.021"
 			}
 
@@ -7907,7 +7799,6 @@ EntityTemplate
 			position
 			{
 				x "50.123"
-				y "0.000"
 				z "-176.334"
 			}
 
@@ -7957,7 +7848,6 @@ EntityTemplate
 			position
 			{
 				x "34.892"
-				y "0.000"
 				z "-160.670"
 			}
 
@@ -8000,7 +7890,6 @@ EntityTemplate
 			position
 			{
 				x "18.123"
-				y "0.000"
 				z "-176.334"
 			}
 
@@ -8043,7 +7932,6 @@ EntityTemplate
 			position
 			{
 				x "18.123"
-				y "0.000"
 				z "-144.334"
 			}
 
@@ -8086,7 +7974,6 @@ EntityTemplate
 			position
 			{
 				x "50.123"
-				y "0.000"
 				z "-144.334"
 			}
 
@@ -8129,7 +8016,6 @@ EntityTemplate
 			position
 			{
 				x "50.123"
-				y "0.000"
 				z "-176.334"
 			}
 
